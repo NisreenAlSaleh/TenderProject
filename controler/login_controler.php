@@ -1,4 +1,5 @@
 <?php
+echo 'jjg';
 class login_controler {
 
     function __construct() {
