@@ -1,9 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?><project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/wamp/www/tender_project/controler/login_controler.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/controler/login_controler.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/controler/tender_controler.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/controler/org_controler.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/general/system_array.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/general/Rout.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/modle/organization.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/modle/DBconnection.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/modle/contact.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/index.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/modle/cookie.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/modle/login.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/modle/login_validation.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/modle/lookup.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/modle/session.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/modle/tender.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/modle/user.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/controler/logout_controler.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/controler/user_controler.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/theams/Views/admin.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/theams/Views/calender.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/theams/Views/error.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/theams/Views/footer.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/view/tender_controler.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/controler/contact_controler.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/general/errors.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/general/genral.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/general/grid.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/general/grid_index.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/general/paths.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/view/View.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/view/contact_form.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/view/login_form.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/view/org_delete_form.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/view/org_form.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/view/org_update_form.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/view/search_form1.php</file>
+            <file>file:/C:/Users/HP/Documents/GitHub/TenderProject/view/tender_delete_form.php</file>
         </group>
     </open-files>
 </project-private>

@@ -1,6 +1,6 @@
 <?php
 
- include 'D:\wamp\www\tender_project\modle\DBconnection.php';
+ include'modle/DBconnection.php';
  
  class contact{
       public function __construct() {

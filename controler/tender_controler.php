@@ -5,7 +5,8 @@
 
 class tender_controler {
     function __construct(){
-    include'D:\wamp\www\tender_project\modle\tender.php';
+    
+    include'modle/tender.php';
    
     }
     function create(){
@@ -17,7 +18,7 @@ class tender_controler {
         tender::check_db();
         }
        }
-       include'D:\wamp\www\tender_project\view\tender_form.php';
+       include'view/tender_form.php';
     }
     function search(){
         include'search_form1.php';

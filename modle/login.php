@@ -2,7 +2,8 @@
  
 class login{
  public   function __construct(){
-        include 'D:\wamp\www\tender_project\modle\DBconnection.php';
+      
+        include'modle/DBconnection.php';
     }
     /*
     function valide(){

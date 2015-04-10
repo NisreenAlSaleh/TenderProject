@@ -1,6 +1,6 @@
 <?php
 
- include 'DBconnection.php';
+ include 'modle/DBconnection.php';
 class user {
  
 function __construct() {

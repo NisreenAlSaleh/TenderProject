@@ -5,8 +5,9 @@
 class user_controler {
     
 function __construct(){
-         include'D:\wamp\www\tender_project\modle\user.php';
-         include'D:\wamp\www\tender_project\view\user_grid_view.php';
+         include'/modle/user.php';
+         include'/view/user_grid_view.php';
+        
     
         }
 function create(){
@@ -19,11 +20,11 @@ function create(){
              user::check_db();   
           }
         }
-          include  'D:\wamp\www\tender_project\view\user_form.php';
+          include  'view/user_form.php';
        
         }
  function search(){
-          include  'D:\wamp\www\tender_project\view\user_delete_form.php';
+          include  'view/user_delete_form.php';
        
         }
 function delete($parm)

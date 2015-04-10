@@ -1,9 +1,9 @@
 <?php
-require_once('grid.php');
+require_once('modle/grid.php');
 
 
 
-include_once'D:\wamp\www\tender_project\modle\user.php';
+include_once'modle/user.php';
   $connect=  new createConnection ();
   $connect->connectToDatabase();
  $s="SELECT * FROM user_profile  ";

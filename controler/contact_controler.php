@@ -2,7 +2,7 @@
 class contact_controler {
 
     function __construct() {
-         include'D:\wamp\www\tender_project\modle\contact.php';
+         include'modle/contact.php';
     }
     function create(){
            if(isset($_POST['username'])){
@@ -16,7 +16,7 @@ class contact_controler {
              
            
         }
-           include'D:\wamp\www\tender_project\view\contact_form.php';
+           include'view/contact_form.php';
      
     }
 

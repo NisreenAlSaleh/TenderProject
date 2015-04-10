@@ -9,11 +9,11 @@ class Views {
 	public function render($name, $noInclude = false)
 	{
 		if ($noInclude == true) {
-			require 'D:/wamp/www/tender_project/view/' . $name . '.php';	
+			require 'view/' . $name . '.php';	
 		}
 		else {
 			
-			require 'D:/wamp/www/tender_project/view/' . $name . '.php';
+			require 'view/' . $name . '.php';
 				
 		}
 	}

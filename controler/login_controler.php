@@ -1,9 +1,9 @@
 <?php
-echo 'jjg';
+
 class login_controler {
 
     function __construct() {
-        include'D:\wamp\www\tender_project\modle\login.php';
+        include'modle/login.php';
     }
     function log_in(){
         if(isset($_POST['user_name'])){
@@ -19,7 +19,7 @@ class login_controler {
           }
         }
       
-          include'D:\wamp\www\tender_project\view\login_form.php';
+          include'view/login_form.php';
             
         
     }
