@@ -5,7 +5,12 @@
 
 class tender_controler {
     function __construct(){
+<<<<<<< HEAD
     include'D:\wamp\www\tender_project\modle\tender.php';
+=======
+    
+    include'modle/tender.php';
+>>>>>>> origin/master
    
     }
     function create(){
@@ -17,12 +22,17 @@ class tender_controler {
         tender::check_db();
         }
        }
+<<<<<<< HEAD
        include'D:\wamp\www\tender_project\view\tender_form.php';
+=======
+       include'view/tender_form.php';
+>>>>>>> origin/master
     }
     function search(){
         include'search_form1.php';
        
     }
+<<<<<<< HEAD
    function delete(){
         if(isset($_POST['tender_name'])){
          $tender_name=$_POST['tender_name'];
@@ -55,6 +65,40 @@ class tender_controler {
        }
          include'D:\wamp\www\tender_project\view\tender_update_form.php'; 
    }
+=======
+ function delete($parm)
+        {
+    echo $parm;
+    new tender();
+   if( tender::delete($parm)){
+       echo $parm."</span>"."is DELETED";
+   }
+   tender_controler::grid_view();
+      
+        }
+function update($parm){
+        
+          new tender();
+         if( tender::update($parm)){
+             echo $parm."</span>"."is updated";
+             tender_controler::grid_view();
+         }
+          
+      
+
+          
+        }
+     
+function grid_view(){
+    new tender_grid_view();
+    tender_grid_view::generate_grid();
+}      
+
+function view($parm){
+   new tender();
+   tender::view($parm);
+}
+>>>>>>> origin/master
    
     }
 

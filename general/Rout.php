@@ -21,9 +21,23 @@ function router()
 		}
 		
 		
+<<<<<<< HEAD
 
 		// calling methods
 		
+=======
+                    
+		// calling methods
+		if (isset($url[2])) {
+			if (method_exists($url[0], $url[1])) {
+                            $controller=new $url[0];
+				$controller->{$url[1]}($url[2]);
+			}
+                        else {
+				echo 'function with no parameters';
+			}
+                } else{
+>>>>>>> origin/master
 			if (isset($url[1])) {
 				if (method_exists($url[0], $url[1])) {
                                     $controller=new $url[0];
@@ -31,7 +45,11 @@ function router()
 				} else {
 					echo'method not found';
 				}
+<<<<<<< HEAD
 			} 
+=======
+			} }
+>>>>>>> origin/master
 		}
 }
 

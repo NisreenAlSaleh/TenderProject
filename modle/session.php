@@ -11,6 +11,7 @@ function __construct(){
 
      }
    
+<<<<<<< HEAD
  public function start($username,$password){
  
  $_SESSION['username']=$username;
@@ -20,6 +21,15 @@ function __construct(){
 echo $_SESSION['username'];
 
 
+=======
+ public function start($username){
+ $q="SELECT user_id FROM user_profile WHERE username='$username'";
+ $select=  mysqli_query($connect->conn, $q);
+ if($select){
+ $res=  mysqli_fetch_array($select);
+$_SESSION['user_id']=$res[0];
+ }
+>>>>>>> origin/master
 $_SESSION['last_action']=time();
 
   

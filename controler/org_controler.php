@@ -4,7 +4,12 @@
 class org_controler {
     
     function __construct() {
+<<<<<<< HEAD
      include'D:\wamp\www\tender_project\modle\organization.php';
+=======
+     
+     include 'modle/organization.php';
+>>>>>>> origin/master
      
     }
     function create(){
@@ -20,7 +25,11 @@ class org_controler {
              
            
         }
+<<<<<<< HEAD
            include'D:\wamp\www\tender_project\view\org_form.php';
+=======
+           include'view/org_form.php';
+>>>>>>> origin/master
     
     }
     function search(){

@@ -1,11 +1,18 @@
 
+<<<<<<< HEAD
 <div id="menu">
+=======
+
+>>>>>>> origin/master
 
 <?php 
 $menu11 = array(
 
   'home'  => array('text'=>'Home',  'url'=>'?p=home'),
+<<<<<<< HEAD
   'login'  => array('text'=>'login',  'url'=>'?p=login'),
+=======
+>>>>>>> origin/master
   'registration form' => array('text'=>'registration form', 'url'=>'user_view.php'),
     'About Us' => array('text'=>'About Us', 'url'=>'?p=About Us'),
 	'Contact Us' => array('text'=>'Contact Us', 'url'=>'contact_form1.php'),
@@ -26,5 +33,9 @@ function generateMenu($items) {
 ?>
 	
 		
+<<<<<<< HEAD
 	</div>
+=======
+
+>>>>>>> origin/master
 

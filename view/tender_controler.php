@@ -23,7 +23,11 @@ height:50px;
  padding-top:10px;
 }
 #form{
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> origin/master
 }
 
 

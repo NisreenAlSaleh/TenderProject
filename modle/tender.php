@@ -38,11 +38,16 @@ else{
 }
 
      }
+<<<<<<< HEAD
  function retrive($username=''){
+=======
+ function view($parm){
+>>>>>>> origin/master
 
    $connect2=  new createConnection ();
   $connect2->connectToDatabase();
 
+<<<<<<< HEAD
      $sql = "SELECT * FROM tender WHERE tender_name='$username'";
 $result = mysqli_query($connect2->conn,$sql);
 
@@ -57,6 +62,50 @@ if ( $result->num_rows > 0)
 else {
     echo "0 results";
      }
+=======
+     $sql = "SELECT * FROM tender WHERE tender_id='$parm'";
+      $query = mysqli_query($connect->conn,$sql);
+     $mydata=  mysqli_fetch_array($query);
+     echo"<table>";
+      echo"<tr>";
+      echo"<th>"."<lable>"."tender id"."</lable>"."</th>";
+          echo"<td>".$mydata['tender_id']."</td>";
+           echo"</tr>";
+          echo"<tr>";
+            echo"<th>"."<lable>"."tender name"."</lable>"."</th>";
+          echo"<td>".$mydata['tender_name']."</td>";
+          echo"</tr>";
+          echo"<tr>";
+          echo"<th>"."<lable>"."org. trade mark"."</lable>"."</th>";
+          echo"<td>".$mydata['org_trade_mark']."</td>";
+          echo"</tr>";
+          echo"<tr>";
+           echo"<th>"."<lable>"."start date"."</lable>"."</th>";
+          echo"<td>".$mydata['start_date']."</td>";
+          echo"</tr>";
+          echo"<tr>";
+           echo"<th>"."<lable>"."End date"."</lable>"."</th>";
+          echo"<td>". $mydata['end_date']."</td>";
+          echo"</tr>";
+          echo"<tr>";
+           echo"<th>"."<lable>"."inv. hand over"."</lable>"."</th>";
+          echo"<td>".$mydata['invelope_hand_over']."</td>";
+          echo"</tr>";
+          echo"<tr>";
+            echo"<th>"."<lable>"."inv. opining"."</lable>"."</th>";
+          echo"<td>".$mydata['invelope_opining']."</td>";
+           echo"</tr>";
+          echo"<tr>";
+           echo"<th>"."<lable>"."tender region"."</lable>"."</th>";
+          echo"<td>".$mydata['tender_region']."</td>";
+           echo"</tr>";
+          echo"<tr>";
+           echo"<th>"."<lable>"."tender content"."</lable>"."</th>";
+          echo"<td>".$mydata['tender_content']."</td>";
+           
+          echo"</tr>";          
+ echo"</table>"; 
+>>>>>>> origin/master
      $connect2->closeConnection();
  }
  
@@ -83,18 +132,32 @@ $q= "SELECT tender_name,org_trade_mark FROM tender WHERE tender_name='$tender_na
       tender:: insert();
     }
  }
+<<<<<<< HEAD
   function delete($tendername){
    $connect2=  new createConnection ();
   $connect2->connectToDatabase();
  $sql1="SELECT tender_name FROM tender WHERE tender_name='$tendername'";
+=======
+  function delete($parm){
+   $connect2=  new createConnection ();
+  $connect2->connectToDatabase();
+ $sql1="SELECT tender_id FROM tender WHERE tender_id='$parm'";
+>>>>>>> origin/master
    $select=mysqli_query($connect2->conn,$sql1);
   $result=  mysqli_fetch_array($select);
   if($result[0]){
       
+<<<<<<< HEAD
   $sql="DELETE FROM utender WHERE tender_name='$tendername'";
   $delete=mysqli_query($connect2->conn,$sql);
   if($delete){
       echo $tendername.'is DELETED';
+=======
+  $sql="DELETE FROM tender WHERE tender_id='$parm'";
+  $delete=mysqli_query($connect2->conn,$sql);
+  if($delete){
+      return true;
+>>>>>>> origin/master
   }
   }
   else{
@@ -104,7 +167,11 @@ $q= "SELECT tender_name,org_trade_mark FROM tender WHERE tender_name='$tender_na
   }
  
   
+<<<<<<< HEAD
   function update($tender_name){
+=======
+  function update($parm){
+>>>>>>> origin/master
       $connect2=  new createConnection ();
   $connect2->connectToDatabase();
    

@@ -2,7 +2,12 @@
  
 class login{
  public   function __construct(){
+<<<<<<< HEAD
         include 'D:\wamp\www\tender_project\modle\DBconnection.php';
+=======
+      
+        include'modle/DBconnection.php';
+>>>>>>> origin/master
     }
     /*
     function valide(){
@@ -30,6 +35,7 @@ class login{
     
     function validate(){
         $var=true;
+<<<<<<< HEAD
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 if (empty($_POST['username']) || empty($_POST['password'])) 
@@ -37,11 +43,21 @@ if (empty($_POST['username']) || empty($_POST['password']))
 
 echo "Username or Password is invalid";
 $var=false;
+=======
+      if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+      if (empty($_POST['user_name'])) 
+         {
+
+      echo "Username or Password is empty";
+      $var=false;
+>>>>>>> origin/master
 
 }
 
 else{
 
+<<<<<<< HEAD
 $user_name=$_POST['username'];
 
 $password=$_POST['password'];
@@ -53,6 +69,19 @@ $password=$_POST['password'];
     
     
 function ceck_db($user_name,$password){
+=======
+$user_name=$_POST['user_name'];
+
+$password=$_POST['password'];
+ 
+}return $var;
+        }
+        
+    }
+    
+    
+function check_db($user_name,$password){
+>>>>>>> origin/master
    $connect=  new createConnection ();
   $connect->connectToDatabase();
 
@@ -65,6 +94,7 @@ if ($result->num_rows ==1) {
 
 
 
+<<<<<<< HEAD
 include'D:\wamp\www\tender_project\modle\session.php';
 $var = new session();
 
@@ -73,6 +103,12 @@ $var->start($_POST['username'],$_POST['password']);
 // Initializing Session
 echo$user_name;
 header(URL);
+=======
+ 
+// Initializing Session
+
+header("location: index.php");
+>>>>>>> origin/master
  // Redirecting To Other Page
 
 } 

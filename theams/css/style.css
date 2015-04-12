@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 body {
 margin: 0;
 padding: 0;
@@ -335,6 +336,327 @@ padding: 5em 0em;
 border-top: 1px solid rgba(255,255,255,0.08);
 }
 
+=======
+
+body {
+	margin-top: 50px;
+	padding: 0;
+	background: #E6CCCC;
+	text-align: justify;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #616161;
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+	color: #8C0209;
+	
+}
+
+h1 {
+	font-size: 1.6em;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+ul {
+}
+
+a {
+	text-decoration: none;
+	color: #8C0209;
+}
+
+a:hover {
+	border-bottom: none;
+}
+
+a img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+img.right {
+	float: right;
+	margin: 0 0 0 20px;
+}
+
+#header {
+	width: 1000px;
+	margin: 0 auto;
+	height: 150px;
+    background:#800000 no-repeat left top;
+}
+
+/* Header */
+
+#logo {
+	width: 800px;
+	height: 100px;
+	margin: 0 auto;
+	padding: 0 10px 0 70px;
+	background: #fff no-repeat left top;
+}
+
+#logo h1, #logo p {
+	float: left;
+	margin: 0;
+	color: #8C0209;
+}
+
+#logo span {
+	color: #400000;
+}
+
+#logo h1 {
+	padding: 25px 0 0 0;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	font-weight: normal;
+	font-size: 3em;
+	  font-family: fantasy;
+}
+
+#logo p {
+	text-transform: uppercase;
+	padding: 47px 0 0 3px;
+	font-size: 10px;
+	color: #110E0F;
+}
+
+#logo a {
+	border: none;
+	text-decoration: none;
+	color: #8C0209;
+}
+
+/* Menu */
+
+#menu {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+	height: 50px;
+	background: url(images/img02.jpg) no-repeat left top;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-left:215px;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	height: 32px;
+	margin: 0;
+	padding: 18px 30px 0 30px;
+	text-decoration: none;
+	text-transform: capitalize;
+	background: url(images/img03.jpg) no-repeat right top;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 17px;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	color: #800000;
+	background:#fff;
+	opacity:1;
+    visibility:visible;
+    top:50px;
+    transition:1s;
+}
+
+#menu .current_page_item a {
+	color: #FFFFFF;
+}
+
+/* Wrapper */
+
+#wrapper {
+}
+
+/* Page */
+
+#page {
+	width: 990px;
+	margin: 0 auto;
+	padding: 28px 88px;
+	background: #FFFFFF;
+}
+
+#page-bg {
+}
+
+/* Latest Post */
+
+#latest-post {
+	padding: 20px;
+	border: 1px solid #E7E7E7;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 550px;
+	height:1200px;
+}
+.flower {
+	padding-left: 20px;
+}
+
+/* Sidebars */
+
+#left_menu {
+	float: left;
+}
+
+#right_menu{
+	float: right;
+}
+
+.sidebar {
+	float: left;
+	width: 220px;
+	padding: 0;
+	font-size: 12px;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar li {
+	padding: 0 0 20px 0;
+}
+
+.sidebar li ul {
+}
+
+.sidebar li li {
+	margin: 0 20px 0 15px;
+	padding: 8px 0px;
+	border-bottom: 1px #BBBBBB dashed;
+}
+
+
+.sidebar li h2 {
+	height: 30px;
+	margin: 0 0 0 0;
+	padding: 10px 15px 0px 15px;
+	background: #890208 url(images/img05.jpg) no-repeat left top;
+	letter-spacing: -1px;
+	font-size: 16px;
+	color: #FFFFFF;
+	  font-family: inherit;
+
+}
+
+.sidebar a {
+}
+
+/* Search */
+
+#searchform {
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+#searchform br {
+	display: none;
+}
+
+#searchform h2 {
+}
+
+#s {
+	margin: 10px 0px 0 15px;
+	padding: 2px 2px;
+	width: 180px;
+	height: 18px;
+	border: 1px solid #CA8186;
+	background: #FFFFFF;
+	font-size: 10px;
+	color: #000000;
+}
+
+#x {
+	margin: 0;
+	padding: 2px 5px;
+	height: 25px;
+	background: #CA8186;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #CCCCCC;
+}
+/* Calendar */
+
+#calendar_wrap {
+	padding: 0 15px;
+	text-align: center;
+}
+
+#calendar_wrap table {
+	width: 100%;
+}
+
+#calendar_wrap th {
+}
+
+#calendar_wrap td {
+}
+
+#calendar_wrap tfoot td {
+	border: none;
+}
+
+#calendar_wrap tfoot td#prev {
+	text-align: left;
+	font-weight: bold;
+	border: none;
+}
+
+#calendar_wrap tfoot td#prev a {
+	border: none;
+}
+
+#calendar_wrap tfoot td#next {
+	text-align: right;
+	font-weight: bold;
+	border: none;
+}
+
+#calendar_wrap tfoot td#next a {
+	border: none;
+}
+
+/* Footer */
+
+>>>>>>> origin/master
 #copyright p
 {
 letter-spacing: 0.20em;
@@ -342,6 +664,10 @@ text-align: center;
 text-transform: uppercase;
 font-size: 0.80em;
 color: 	#2E4E4E;
+<<<<<<< HEAD
+=======
+margin-left:180px;
+>>>>>>> origin/master
 }
 
 #copyright a
@@ -349,6 +675,7 @@ color: 	#2E4E4E;
 text-decoration: none;
 color: #2E4E4E;
 }
+<<<<<<< HEAD
 .content{
     padding-top: 0px;
     
@@ -356,17 +683,31 @@ color: #2E4E4E;
 .container {
 width: 900px;
 margin: 0px auto;
+=======
+
+.container {
+width: 1200px;
+>>>>>>> origin/master
 }
 
 .icons {
 text-align:center;
+<<<<<<< HEAD
+=======
+margin-left:180px;
+>>>>>>> origin/master
 }
 .icons li {
 list-style:none;
 display:inline;
+<<<<<<< HEAD
 }
 
 
+=======
+
+}
+>>>>>>> origin/master
 /*error page*/
 body{
 font-family: 'Courgette', cursive;
@@ -381,13 +722,21 @@ margin-top:50px;
 }	
 .logoo h1{
 font-size:xx-large;
+<<<<<<< HEAD
 color:#006666;
+=======
+color:#800000;
+>>>>>>> origin/master
 text-align:center;
 margin-bottom:1px;
 text-shadow:1px 1px 6px #fff;
 }	
 .logoo p{
+<<<<<<< HEAD
 color:#006666;
+=======
+color:#A64D4D;
+>>>>>>> origin/master
 font-size:20px;
 margin-top:1px;
 text-align:center;
@@ -397,7 +746,11 @@ color:lightgreen;
 }	
 .sub a{
 color:white;
+<<<<<<< HEAD
 background:#006666;
+=======
+background:#800000;
+>>>>>>> origin/master
 text-decoration:none;
 padding:7px 120px;
 font-size:13px;
@@ -407,3 +760,97 @@ font-weight:bold;
 -moz-border-radius:.1em;
 -border-radius:.1em;
 }	
+<<<<<<< HEAD
+=======
+
+.form-style-3{
+    max-width: 450px;
+   font-family: cursive;
+}
+.form-style-3 label{
+    display:block;
+    margin-bottom: 10px;
+}
+.form-style-3 label > span{
+    float: left;
+    width: 100px;
+    color: #2E4E4E;
+    font-weight: bold;
+    font-size: 13px;
+    text-shadow: 1px 1px 1px #fff;
+}
+.form-style-3 fieldset{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+    border: 1px solid #7DB1B1;
+    padding: 20px;
+    background: #CEE2E2;
+    box-shadow: inset 0px 0px 15px #AECECE;
+    -moz-box-shadow: inset 0px 0px 15px #AECECE;
+    -webkit-box-shadow: inset 0px 0px 15px #AECECE;
+}
+.form-style-3 fieldset legend{
+    color: #2E4E4E;
+    border-top: 1px solid #5C9D9D;
+    border-left: 1px solid #5C9D9D;
+    border-right: 1px solid #5C9D9D;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    background: #DEEBEB;
+    padding: 0px 8px 3px 8px;
+    box-shadow: -0px -1px 2px #F1F1F1;
+    -moz-box-shadow:-0px -1px 2px #F1F1F1;
+    -webkit-box-shadow:-0px -1px 2px #F1F1F1;
+    font-weight: normal;
+    font-size: 12px;
+}
+.form-style-3 textarea{
+    width:250px;
+    height:100px;
+}
+.form-style-3 input[type=text],
+.form-style-3 input[type=date],
+.form-style-3 input[type=datetime],
+.form-style-3 input[type=number],
+.form-style-3 input[type=search],
+.form-style-3 input[type=time],
+.form-style-3 input[type=url],
+.form-style-3 input[type=email],
+.form-style-3 select, 
+.form-style-3 textarea{
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid #AECECE;
+    outline: none;
+    color: #1C2F2F;
+    padding: 5px 8px 5px 8px;
+    box-shadow: inset 1px 1px 4px #AECECE;
+    -moz-box-shadow: inset 1px 1px 4px #AECECE;
+    -webkit-box-shadow: inset 1px 1px 4px #AECECE;
+    background: #DEEBEB;
+    width:initial;
+}
+.form-style-3  input[type=submit],
+.form-style-3  input[type=button]{
+    background: #DEEBEB;
+    border: 1px solid #AECECE;
+    padding: 5px 15px 5px 15px;
+    color: #1C2F2F;
+    box-shadow: inset -1px -1px 3px #AECECE;
+    -moz-box-shadow: inset -1px -1px 3px #AECECE;
+    -webkit-box-shadow: inset -1px -1px 3px #AECECE;
+    border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;    
+    font-weight: bold;
+}
+.required{
+    color:red;
+    font-weight:normal;
+}
+>>>>>>> origin/master
