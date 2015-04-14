@@ -12,13 +12,13 @@ function __construct(){
 function create(){
           if(isset($_POST['username'])){
         
-         $x= new user();
-       //validate();
-         //print_r($error);
+         $user= new user();
+         $user->validate();
+         
           if(empty($error)){
-             user::check_db(); 
-             new user_grid_view();
-    user_grid_view::generate_grid();
+              $user->check_db(); 
+            $user_grid_view= new user_grid_view();
+            $user_grid_view->generate_grid();
           }
           
         }
@@ -32,8 +32,8 @@ function create(){
 function delete($parm)
         {
     
-    new user();
-   if( user::delete($parm)){
+    $user=new user();
+   if( $user->delete($parm)){
        echo $parm."</span>"."is DELETED";
    }
    user_controler::grid_view();
@@ -41,8 +41,8 @@ function delete($parm)
         }
 function update($parm){
         
-          new user();
-         if( user::update($parm)){
+         $user= new user();
+         if( $user->update($parm)){
              echo $parm."</span>"."is updated";
              
          }
@@ -53,13 +53,13 @@ function update($parm){
         }
      
 function grid_view(){
-    new user_grid_view();
-    user_grid_view::generate_grid();
+  $user_grid_view=  new user_grid_view();
+    $user_grid_view->generate_grid();
 }      
 
 function view($parm){
-   new user();
-   user::view($parm);
+   $user=new user();
+   $user->view($parm);
 }
  
         }
