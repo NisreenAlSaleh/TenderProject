@@ -1,8 +1,8 @@
 <?php
 
 
-include_once 'DBconnection.php';
- class lookup_gov_model{
+include_once'modle\DBconnection.php';
+ class lookup_area_model{
        
    
    public function _construct(){
@@ -13,9 +13,14 @@ include_once 'DBconnection.php';
        
 	$connect=  new createConnection ();
        $connect->connectToDatabase();
- 
-         $s1="INSERT INTO governerate(name) VALUES ('$name')";
-          
+        $s0= "SELECT name FROM area WHERE name ='$name'";
+      
+         $sql=  mysqli_query($connect->conn, $s0);
+         $result=  mysqli_fetch_array($sql);
+        if (!$result[0]) {
+     
+         $s1="INSERT INTO area(name) VALUES ('$name')";
+        
          $sql1=  mysqli_query($connect->conn, $s1);
           if($sql1){
               echo 'insertion success ';
@@ -24,13 +29,16 @@ include_once 'DBconnection.php';
               echo 'cant insert please try again';
           }
 	             }
-                     
+                     else{
+                         echo 'this area already exists';
+                     }
+   }
         static function select(){
             
        $connect=  new createConnection ();
        $connect->connectToDatabase();
        
-      $s2= "SELECT name FROM governerate";
+      $s2= "SELECT name FROM area";
      
     
 $sql=  mysqli_query($connect->conn, $s2);
@@ -53,7 +61,7 @@ echo "0 results";
         $connect=  new createConnection ();
        $connect->connectToDatabase();
       
-       $s3 = "UPDATE governerate SET name='$value' WHERE name_id='$parm' ";
+       $s3 = "UPDATE area SET name='$value' WHERE area_id='$parm' ";
        $sql3=mysqli_query($connect->conn,$s3);
       
                
@@ -71,7 +79,7 @@ echo "0 results";
         $connect=  new createConnection ();
        $connect->connectToDatabase();
       
-        $s4 = "DELETE FROM governerate WHERE name_id='$name'";
+        $s4 = "DELETE FROM area WHERE area_id='$name'";
         $sql4=mysqli_query($connect->conn,$s4);
          if($sql4){
               echo 'Deleted successfully </br>';

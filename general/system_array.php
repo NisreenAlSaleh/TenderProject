@@ -17,7 +17,9 @@ $left_menu = array(
     'User' => array('text'=>'user', 'url'=>'./index.php?url=user_controler/grid_view'),
     'Tender' => array('text'=>'Tender', 'url'=>'./index.php?url=tender_controler/grid_view'),
      'Organization' => array('text'=>'Organization', 'url'=>'./index.php?url=org_controler/grid_view'),
-    'governerate' => array('text'=>'governerate', 'url'=>'./index.php?url=lookup_gov_con/grid_view'),
+ 'governerate' => array('text'=>'governerate', 'url'=>'./index.php?url=lookup_gov_con/grid_view'),
+  'category' => array('text'=>'category', 'url'=>'./index.php?url=lookup_cat_con/grid_view'),
+    'area' => array('text'=>'area', 'url'=>'./index.php?url=lookup_area_con/grid_view'),
  
 );
 

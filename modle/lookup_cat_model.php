@@ -1,9 +1,8 @@
 <?php
 
-//define ('DS',DIRECTORY_SEPARATOR);
- include "app".DS."DBConnection.class1.php";
 
- class lookup_gov_model{
+include_once'modle\DBconnection.php';
+ class lookup_cat_model{
        
    
    public function _construct(){
@@ -32,11 +31,13 @@
        $connect->connectToDatabase();
        
       $s2= "SELECT name FROM category";
+     
     
 $sql=  mysqli_query($connect->conn, $s2);
 if ($sql->num_rows > 0) {
 // output data of each row
 while($row = $sql->fetch_assoc()) {
+    
 echo "<option value='$row[name]'>  $row[name] </option>";
                  }
 }
@@ -48,13 +49,16 @@ echo "0 results";
 
  
     
-    static function update($name,$value){
+    static function update($value,$parm){
         $connect=  new createConnection ();
        $connect->connectToDatabase();
       
-       $s3 = "UPDATE category SET name='$name' WHERE name='$value' ";
+       $s3 = "UPDATE category SET name='$value' WHERE cat_id='$parm' ";
        $sql3=mysqli_query($connect->conn,$s3);
-        if($sql3){
+      
+               
+           
+        if($sql3){          
               echo 'Updated successfully ';
           }
           else{
@@ -63,11 +67,11 @@ echo "0 results";
        
     }
     static function delete($name){
-        
+        echo$name;
         $connect=  new createConnection ();
        $connect->connectToDatabase();
       
-        $s4 = "DELETE FROM category WHERE name='$name'";
+        $s4 = "DELETE FROM category WHERE cat_id='$name'";
         $sql4=mysqli_query($connect->conn,$s4);
          if($sql4){
               echo 'Deleted successfully </br>';

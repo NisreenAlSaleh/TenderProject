@@ -1,72 +1,77 @@
 <?php 
 
-//define ('DS',DIRECTORY_SEPARATOR);
- //include "app".DS."DBConnection.class1.php";
- 
- class lookup_cat_con{
-     
-  public function _construct(){
-    
-  }
-          
-   function  add(){ 
-      include "app".DS."view".DS."lookup_gov_add.php";
-   $ename='';
-   $name=''; 
-   $var=0;
-   
-   if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      if(empty($_POST['name']))  {
-    echo'name require';
-$var=1;
- }
-   else {
-       $name=$_POST['name'] ;
-       
-       }
+class lookup_cat_con{
 
-       if($var!=1){
-            include "app".DS."model".DS."lookup_gov_model.php";
-           new lookup_gov_model();
-           lookup_gov_model::insert($name);
-       }
-     
-  }
-  }
-  
- function view(){
-      include "app".DS."view".DS."lookup_gov_view.php";
-      include "app".DS."model".DS."lookup_gov_model.php";
-      new lookup_gov_model();
-           lookup_gov_model::select();
- }
-  
- function update(){
-     
-    include "app".DS."view".DS."lookup_gov_update.php";
-    
-     
+public function _construct(){       
+}
+
+function  add(){ 
+include "view/lookup/lookup_cat/lookup_cat_add.php";
+$ename='';
+$name=''; 
+$var=0;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if(empty($_POST['name']))  {
+echo'name require';
+$var=1;
+}
+else {
+$name=$_POST['name'] ;
+
+}
+
+if($var!=1){
+include "modle/lookup_cat_model.php";
+new lookup_cat_model();
+lookup_cat_model::insert($name);
+}
+lookup_cat_con::grid_view();
+}
+}// end of add function
+
+static function view(){
+include "/modle/lookup_cat_model.php";
+include "view/lookup/lookup_cat/lookup_cat_view.php";
+new lookup_cat_model();
+lookup_cat_model::select();
+
+}
+
+function update($parm){
+
+include "modle/lookup_cat_model.php";
+
+include "view/lookup/lookup_cat/lookup_cat_update.php";
 if(isset($_POST['submit']))
 {
+
 $value=$_POST['sel'];
-$name=$_POST['name'];
-     include "app".DS."model".DS."lookup_gov_model.php";
-     new lookup_gov_model();
-     lookup_gov_model::update($value,$name);
+
+new lookup_cat_model();
+lookup_cat_model::update($value,$parm);
 }
- }
- 
- // here is the delete function 
- function delete(){
-     include "app".DS."view".DS."lookup_gov_delete.php";
-     
-     if(isset($_POST['submit']))
-{
-$name=$_POST['name'];
-include "app".DS."model".DS."lookup_gov_model.php";
-     new lookup_gov_model();
-           lookup_gov_model::delete($name);
- }
- }
- }
- ?>
+lookup_cat_con::grid_view();
+}
+
+// here is the delete function 
+function delete($parm){
+$name=$parm;
+include "modle/lookup_cat_model.php";
+new lookup_cat_model();
+lookup_cat_model::delete($name);
+lookup_cat_con::grid_view();
+
+}
+function grid_view(){
+include "view/lookup/lookup_cat/lookup_cat_grid.php";
+$lookup1_grid_view= new lookup1_grid_view();
+$lookup1_grid_view->generate_grid();
+}      
+
+function view2($parm){
+new lookup_cat_model();
+lookup_cat_model::view($parm);
+}
+}
+?>
