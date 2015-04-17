@@ -9,13 +9,18 @@ include_once 'DBconnection.php';
        
    }
  
-   static function insert($name){
+    function insert($name){
        
 	$connect=  new createConnection ();
        $connect->connectToDatabase();
- 
+        $s0= "SELECT name FROM governerate WHERE name ='$name'";
+      
+         $sql=  mysqli_query($connect->conn, $s0);
+         $result=  mysqli_fetch_array($sql);
+        if (!$result[0]) {
+     
          $s1="INSERT INTO governerate(name) VALUES ('$name')";
-          
+        
          $sql1=  mysqli_query($connect->conn, $s1);
           if($sql1){
               echo 'insertion success ';
@@ -24,8 +29,12 @@ include_once 'DBconnection.php';
               echo 'cant insert please try again';
           }
 	             }
+                     else{
+                         echo 'this governerate already exists';
+                     }
+	             }
                      
-        static function select(){
+         function select(){
             
        $connect=  new createConnection ();
        $connect->connectToDatabase();
@@ -49,7 +58,7 @@ echo "0 results";
 
  
     
-    static function update($value,$parm){
+    function update($value,$parm){
         $connect=  new createConnection ();
        $connect->connectToDatabase();
       
@@ -66,7 +75,7 @@ echo "0 results";
           }
        
     }
-    static function delete($name){
+     function delete($name){
         echo$name;
         $connect=  new createConnection ();
        $connect->connectToDatabase();

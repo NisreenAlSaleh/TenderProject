@@ -23,8 +23,8 @@ $name=$_POST['name'] ;
 
 if($var!=1){
 include "modle/lookup_cat_model.php";
-new lookup_cat_model();
-lookup_cat_model::insert($name);
+$lookup_cat_model=new lookup_cat_model();
+$lookup_cat_model->insert($name);
 }
 lookup_cat_con::grid_view();
 }
@@ -33,8 +33,8 @@ lookup_cat_con::grid_view();
 static function view(){
 include "/modle/lookup_cat_model.php";
 include "view/lookup/lookup_cat/lookup_cat_view.php";
-new lookup_cat_model();
-lookup_cat_model::select();
+$lookup_cat_model=new lookup_cat_model();
+$lookup_cat_model->select();
 
 }
 
@@ -48,8 +48,8 @@ if(isset($_POST['submit']))
 
 $value=$_POST['sel'];
 
-new lookup_cat_model();
-lookup_cat_model::update($value,$parm);
+$lookup_cat_model=new lookup_cat_model();
+$lookup_cat_model->update($value,$parm);
 }
 lookup_cat_con::grid_view();
 }
@@ -58,8 +58,8 @@ lookup_cat_con::grid_view();
 function delete($parm){
 $name=$parm;
 include "modle/lookup_cat_model.php";
-new lookup_cat_model();
-lookup_cat_model::delete($name);
+$lookup_cat_model=new lookup_cat_model();
+$lookup_cat_model->delete($name);
 lookup_cat_con::grid_view();
 
 }
@@ -70,8 +70,8 @@ $lookup1_grid_view->generate_grid();
 }      
 
 function view2($parm){
-new lookup_cat_model();
-lookup_cat_model::view($parm);
+$lookup_cat_model=new lookup_cat_model();
+$lookup_cat_model->view($parm);
 }
 }
 ?>
