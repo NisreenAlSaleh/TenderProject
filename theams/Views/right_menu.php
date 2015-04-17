@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<div id=ten >
 	<div id="outter">
 	   <div id="navbar>
@@ -36,6 +37,8 @@
         </div>
         </div>
 =======
+=======
+>>>>>>> origin/master
 
 	
 <?php 
@@ -74,5 +77,9 @@ function generateMenu3($items) {
 }
 ?>
 
+<<<<<<< HEAD
+      
+>>>>>>> origin/master
+=======
       
 >>>>>>> origin/master

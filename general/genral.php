@@ -2,9 +2,15 @@
 class Genral{
    
 <<<<<<< HEAD
+<<<<<<< HEAD
 function generateMenu($items,$class) {
   $html = "<div id=$class>";
   $html .= "<nav>";
+=======
+function generateMenu($items) {
+  
+  $html = "<nav>";
+>>>>>>> origin/master
 =======
 function generateMenu($items) {
   

@@ -1,6 +1,10 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+/*
+>>>>>>> origin/master
 =======
 /*
 >>>>>>> origin/master
@@ -60,7 +64,11 @@ $connect->closeConnection(); // Closing Connection
 
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+*/
+>>>>>>> origin/master
 =======
 */
 >>>>>>> origin/master

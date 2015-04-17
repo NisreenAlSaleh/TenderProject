@@ -1,5 +1,6 @@
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 body {
 margin: 0;
 padding: 0;
@@ -337,6 +338,8 @@ border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 =======
+=======
+>>>>>>> origin/master
 
 body {
 	margin-top: 50px;
@@ -394,8 +397,13 @@ img.right {
 }
 
 #header {
+<<<<<<< HEAD
 	width: 1000px;
 	margin: 0 auto;
+=======
+	width: 1164px;
+	margin: 12px auto;
+>>>>>>> origin/master
 	height: 150px;
     background:#800000 no-repeat left top;
 }
@@ -403,7 +411,11 @@ img.right {
 /* Header */
 
 #logo {
+<<<<<<< HEAD
 	width: 800px;
+=======
+	width: 995px;
+>>>>>>> origin/master
 	height: 100px;
 	margin: 0 auto;
 	padding: 0 10px 0 70px;
@@ -456,7 +468,11 @@ img.right {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+<<<<<<< HEAD
 	margin-left:215px;
+=======
+	margin-left:150px;
+>>>>>>> origin/master
 }
 
 #menu li {
@@ -498,9 +514,14 @@ img.right {
 /* Page */
 
 #page {
+<<<<<<< HEAD
 	width: 990px;
 	margin: 0 auto;
 	padding: 28px 88px;
+=======
+	width: 1170px;
+	margin: 0 auto;
+>>>>>>> origin/master
 	background: #FFFFFF;
 }
 
@@ -517,10 +538,20 @@ img.right {
 /* Content */
 
 #content {
+<<<<<<< HEAD
 	float: left;
 	width: 550px;
 	height:1200px;
 }
+=======
+    float: left!important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    width: 710px !important;
+    height: 1200px !important;
+}
+
+>>>>>>> origin/master
 .flower {
 	padding-left: 20px;
 }
@@ -532,7 +563,11 @@ img.right {
 }
 
 #right_menu{
+<<<<<<< HEAD
 	float: right;
+=======
+	float: right!important;
+>>>>>>> origin/master
 }
 
 .sidebar {
@@ -656,6 +691,9 @@ img.right {
 
 /* Footer */
 
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 #copyright p
 {
@@ -665,6 +703,10 @@ text-transform: uppercase;
 font-size: 0.80em;
 color: 	#2E4E4E;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+margin-left:180px;
+>>>>>>> origin/master
 =======
 margin-left:180px;
 >>>>>>> origin/master
@@ -675,6 +717,7 @@ margin-left:180px;
 text-decoration: none;
 color: #2E4E4E;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 .content{
     padding-top: 0px;
@@ -688,11 +731,20 @@ margin: 0px auto;
 .container {
 width: 1200px;
 >>>>>>> origin/master
+=======
+
+.container {
+width: 1200px;
+>>>>>>> origin/master
 }
 
 .icons {
 text-align:center;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+margin-left:180px;
+>>>>>>> origin/master
 =======
 margin-left:180px;
 >>>>>>> origin/master
@@ -700,6 +752,7 @@ margin-left:180px;
 .icons li {
 list-style:none;
 display:inline;
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 
@@ -713,6 +766,16 @@ body{
 font-family: 'Courgette', cursive;
 }
 	
+=======
+
+}
+/*error page*/
+/*
+body{
+font-family: 'Courgette', cursive;
+}
+*/	
+>>>>>>> origin/master
 .wrap{
 margin:0 auto;
 width:1000px;
@@ -723,7 +786,11 @@ margin-top:50px;
 .logoo h1{
 font-size:xx-large;
 <<<<<<< HEAD
+<<<<<<< HEAD
 color:#006666;
+=======
+color:#800000;
+>>>>>>> origin/master
 =======
 color:#800000;
 >>>>>>> origin/master
@@ -733,7 +800,11 @@ text-shadow:1px 1px 6px #fff;
 }	
 .logoo p{
 <<<<<<< HEAD
+<<<<<<< HEAD
 color:#006666;
+=======
+color:#A64D4D;
+>>>>>>> origin/master
 =======
 color:#A64D4D;
 >>>>>>> origin/master
@@ -747,7 +818,11 @@ color:lightgreen;
 .sub a{
 color:white;
 <<<<<<< HEAD
+<<<<<<< HEAD
 background:#006666;
+=======
+background:#800000;
+>>>>>>> origin/master
 =======
 background:#800000;
 >>>>>>> origin/master
@@ -761,7 +836,10 @@ font-weight:bold;
 -border-radius:.1em;
 }	
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/master
 
 .form-style-3{
     max-width: 450px;
@@ -852,5 +930,101 @@ font-weight:bold;
 .required{
     color:red;
     font-weight:normal;
+}
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
+.CSS_Table_Example {
+	margin:0px;padding:0px;
+	width:100%;
+	box-shadow: 5px 5px 5px #C08080;
+	border:1px solid #D9B2B2;
+	-moz-border-radius-bottomleft:9px;
+	-webkit-border-bottom-left-radius:9px;
+	border-bottom-left-radius:9px;
+	-moz-border-radius-bottomright:9px;
+	-webkit-border-bottom-right-radius:9px;
+	border-bottom-right-radius:9px;
+	-moz-border-radius-topright:9px;
+	-webkit-border-top-right-radius:9px;
+	border-top-right-radius:9px;
+	-moz-border-radius-topleft:9px;
+	-webkit-border-top-left-radius:9px;
+	border-top-left-radius:9px;
+}.CSS_Table_Example table{
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}.CSS_Table_Example tr:last-child td:last-child {
+	-moz-border-radius-bottomright:9px;
+	-webkit-border-bottom-right-radius:9px;
+	border-bottom-right-radius:9px;
+}.CSS_Table_Example table tr:first-child td:first-child {
+	-moz-border-radius-topleft:9px;
+	-webkit-border-top-left-radius:9px;
+	border-top-left-radius:9px;
+}.CSS_Table_Example table tr:first-child td:last-child {
+	-moz-border-radius-topright:9px;
+	-webkit-border-top-right-radius:9px;
+	border-top-right-radius:9px;
+}.CSS_Table_Example tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:9px;
+	-webkit-border-bottom-left-radius:9px;
+	border-bottom-left-radius:9px;
+}.CSS_Table_Example tr:hover td{
+	background-color:#800000;
+	background:-o-linear-gradient(bottom, #800000 5%, #800000 100%);	
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #800000), color-stop(1, #E6CCCC) );
+	background:-moz-linear-gradient( center top, #E6CCCC 5%, #E6CCCC 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#E6CCCC", endColorstr="#E6CCCC");	
+	background: -o-linear-gradient(top,#E6CCCC,#E6CCCC);
+	color:#5A0000;
+	
+}.CSS_Table_Example tr:first-child td{
+	background:-o-linear-gradient(bottom, #E6CCCC 5%, #E6CCCC 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #A64D4D), color-stop(1, #E6CCCC) );
+	background:-moz-linear-gradient( center top, #E6CCCC 5%, #E6CCCC 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#E6CCCC", endColorstr="#E6CCCC");	
+	background: -o-linear-gradient(top,#E6CCCC,#E6CCCC);
+	background-color:#E6CCCC;
+	
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:18px;
+	font-family:Comic Sans MS;
+	font-weight:bold;
+	color:#800000;
+}.CSSTableGenerator tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #E6CCCC 5%,#E6CCCC 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #E6CCCC), color-stop(1, #E6CCCC) );
+	background:-moz-linear-gradient( center top, #E6CCCC 5%, #E6CCCC 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#E6CCCC", endColorstr="#E6CCCC");
+	background: -o-linear-gradient(top,#E6CCCC);
+	background-color:#E6CCCC;
+}.CSS_Table_Example tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}.CSS_Table_Example tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}.CSS_Table_Example td{
+	background:-o-linear-gradient(bottom, #56aaff 5%, #82c0ff 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #E6CCCC), color-stop(1, #E6CCCC) ); 
+	background:-moz-linear-gradient( center top, #56aaff 5%, #82c0ff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#E6CCCC", endColorstr="#E6CCCC");	
+	background: -o-linear-gradient(top,#E6CCCC,#E6CCCC);
+	background-color:#E6CCCC;
+	border:1px solid #D9B2B2;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	font-size:12px;
+	font-family:Comic Sans MS;
+	font-weight:bold;
+	color:#5A0000;
+}.CSS_Table_Example tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.CSS_Table_Example tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.CSS_Table_Example tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
 }
 >>>>>>> origin/master

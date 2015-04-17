@@ -1,9 +1,13 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  include 'D:\wamp\www\tender_project\modle\DBconnection.php';
 =======
  include'modle/DBconnection.php';
+>>>>>>> origin/master
+=======
+ include 'DBconnection.php';
 >>>>>>> origin/master
  
  class contact{

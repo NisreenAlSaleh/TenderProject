@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  include 'DBconnection.php';
 class user {
    
@@ -22,6 +23,10 @@ class user {
 =======
  include 'modle/DBconnection.php';
 class user {
+=======
+ include 'DBconnection.php';
+class user {
+>>>>>>> origin/master
  
 function __construct() {
           
@@ -31,12 +36,16 @@ function  insert(){
          $connect=  new createConnection ();
          $connect->connectToDatabase();
          $org_name=$_POST['org_name'];
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
          
          $org_id="SELECT org_id FROM org_table WHERE org_name='$org_name'";
         
          
          $sql2=  mysqli_query($connect->conn, $org_id);
+<<<<<<< HEAD
 <<<<<<< HEAD
         $g=  mysqli_fetch_array($sql2);
         
@@ -71,6 +80,8 @@ else {
     echo "no match found";
      }
 =======
+=======
+>>>>>>> origin/master
          $g=  mysqli_fetch_array($sql2);
         
          echo 'hallo this is insertion for the tender';
@@ -119,6 +130,9 @@ function view($parm){
            
           echo"</tr>";          
  echo"</table>"; 
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
      $connect->closeConnection();
  }
@@ -149,31 +163,43 @@ function view($parm){
    
  }
 <<<<<<< HEAD
+<<<<<<< HEAD
   function delete($username){
   $connect2=  new createConnection ();
   $connect2->connectToDatabase();
  $sql1="SELECT user_name FROM user_profile WHERE user_name='$username'";
 =======
+=======
+>>>>>>> origin/master
   function delete($parm){
   $connect2=  new createConnection ();
   $connect2->connectToDatabase();
   
  $sql1="SELECT user_id FROM user_profile WHERE user_id='$parm'";
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
    $select=mysqli_query($connect2->conn,$sql1);
   $result=  mysqli_fetch_array($select);
   if($result[0]){
       
 <<<<<<< HEAD
+<<<<<<< HEAD
   $sql="DELETE FROM user_profile WHERE user_name='$username'";
   $delete=mysqli_query($connect2->conn,$sql);
   if($delete){
       echo $username.'is DELETED';
 =======
+=======
+>>>>>>> origin/master
   $sql="DELETE FROM user_profile WHERE user_id='$parm'";
   $delete=mysqli_query($connect2->conn,$sql);
   if($delete){
       return true;
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
   }
   }
@@ -188,7 +214,12 @@ function view($parm){
   
   
 <<<<<<< HEAD
+<<<<<<< HEAD
   function update($username){
+=======
+  function update($parm){
+      
+>>>>>>> origin/master
 =======
   function update($parm){
       
@@ -197,6 +228,7 @@ function view($parm){
   $connect2->connectToDatabase();
    
   $sql="SELECT user_id,user_name,user_phone,user_email,first_name,last_name 
+<<<<<<< HEAD
 <<<<<<< HEAD
   FROM user_profile WHERE user_name='$username'";
 
@@ -214,6 +246,8 @@ $user_id=$res['user_id'];
       while($row=  mysqli_fetch_array($select)){
           
 =======
+=======
+>>>>>>> origin/master
   FROM user_profile WHERE user_id='$parm'";
   $select=  mysqli_query($connect2->conn, $sql);
 
@@ -222,7 +256,14 @@ $user_id=$res['user_id'];
   if($select){
  
      ?>
+<<<<<<< HEAD
       <form action="" method="post">
+        <?php  
+      while($row=  mysqli_fetch_array($select)){
+            
+>>>>>>> origin/master
+=======
+      <form action="" method="post" class="form-style-3 ">
         <?php  
       while($row=  mysqli_fetch_array($select)){
             
@@ -232,6 +273,7 @@ $user_id=$res['user_id'];
         $user_email=$row['user_email'];
         $first_name=$row['first_name'];
         $last_name=$row['last_name'];
+<<<<<<< HEAD
 <<<<<<< HEAD
      $user_id=$row['user_id'];
 
@@ -254,6 +296,8 @@ $user_id=$res['user_id'];
  echo"<td>" ."</td><td><input type='submit'  value='update'>". "</td>";
           echo"</form>";      
 =======
+=======
+>>>>>>> origin/master
        
 
      echo"<table>";
@@ -282,28 +326,38 @@ $user_id=$res['user_id'];
  echo"<td>" ."</td><td><input type='submit'  value='update'>". "</td>";
  echo"</table>";    
  echo"</form>";      
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
     
      
       }
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
           
         if (isset($_POST['update'])){
  
 echo 'start 0';exit();            $user_name=$_POST['user_name'];
 =======
+=======
+>>>>>>> origin/master
            
         if (isset($_POST['user'])){
             
          if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user_name=$_POST['user'];
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
         $user_phone=$_POST['user_phone'];
         $user_email=$_POST['user_email'];
         $first_name=$_POST['first_name'];
         $last_name=$_POST['last_name'];
             
+<<<<<<< HEAD
 <<<<<<< HEAD
   
 
@@ -323,12 +377,18 @@ echo 'start 0';exit();            $user_name=$_POST['user_name'];
       }
         }
 =======
+=======
+>>>>>>> origin/master
      $sql="UPDATE user_profile SET user_name='$user_name',user_phone='$user_phone',user_email='$user_email',
       first_name='$first_name',last_name='$last_name' WHERE user_id='$parm'"; 
  
       $update=mysqli_query($connect2->conn,$sql);
       if($update){
+<<<<<<< HEAD
           RETURN true;
+=======
+         return true;
+>>>>>>> origin/master
           
       }
       else{
@@ -336,6 +396,9 @@ echo 'start 0';exit();            $user_name=$_POST['user_name'];
         }
         }
        }
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
         
   
@@ -343,6 +406,7 @@ echo 'start 0';exit();            $user_name=$_POST['user_name'];
   }
   function validate(){
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 $username=$firstname=$lastname=$email=$phone=$gender=$password=$rpassword="";
 $eusername=$efirstname=$elastname=$eemail=$ephone=$epassword=$erpassword=$pass=$genderErr="";
@@ -354,6 +418,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      echo $eusername;
 	 $var=false;
 =======
+=======
+>>>>>>> origin/master
 $username=$org_name=$firstname=$lastname=$email=$phone=$gender=$password=$rpassword="";
 $eusername=$efirstname=$elastname=$eemail=$ephone=$epassword=$erpassword=$pass=$genderErr="";
  $var =true;
@@ -362,7 +428,13 @@ $eusername=$efirstname=$elastname=$eemail=$ephone=$epassword=$erpassword=$pass=$
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
  if (empty($_POST["username"])) {
+<<<<<<< HEAD
      $error['user_name'] = "Name is required";
+    
+	
+>>>>>>> origin/master
+=======
+     $error['user_n'] = "Name is required";
     
 	
 >>>>>>> origin/master
@@ -375,6 +447,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (empty($_POST["firstname"])) {
      $efirstname = "firstname is required";
 =======
@@ -384,10 +457,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     else{
         $org_name=$_POST['org_name'];
+=======
+    if (empty($_POST["org_name"])) {
+     $error['org_n'] = "organization  is required";
+    
+    }
+    else{
+        $org_name=$_POST['org_n'];
+>>>>>>> origin/master
     }
     
     if (empty($_POST["firstname"])) {
      $error['first_name'] = "firstname is required";
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
      $var=false;
 
@@ -400,8 +484,12 @@ if (!preg_match("/^[a-zA-Z ]*$/",$firstname)) {
 
     if (empty($_POST["lastname"])) {
 <<<<<<< HEAD
+<<<<<<< HEAD
      $elastname = "last name is required";
 	 $var=false;
+=======
+    $error['last_name'] = "last name is required";
+>>>>>>> origin/master
 =======
     $error['last_name'] = "last name is required";
 >>>>>>> origin/master
@@ -464,6 +552,7 @@ if($rpassword!=$password){$pass="Not maching" ;$var=1;}
 
 	}
 	}
+<<<<<<< HEAD
  
 
 
@@ -473,6 +562,12 @@ if($rpassword!=$password){$pass="Not maching" ;$var=1;}
 <<<<<<< HEAD
   return $var;
 =======
+  return $error;
+>>>>>>> origin/master
+=======
+         
+}
+}
   return $error;
 >>>>>>> origin/master
 }

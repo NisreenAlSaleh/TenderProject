@@ -22,10 +22,13 @@ function router()
 		
 		
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 		// calling methods
 		
 =======
+=======
+>>>>>>> origin/master
                     
 		// calling methods
 		if (isset($url[2])) {
@@ -37,6 +40,9 @@ function router()
 				echo 'function with no parameters';
 			}
                 } else{
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 			if (isset($url[1])) {
 				if (method_exists($url[0], $url[1])) {
@@ -46,7 +52,11 @@ function router()
 					echo'method not found';
 				}
 <<<<<<< HEAD
+<<<<<<< HEAD
 			} 
+=======
+			} }
+>>>>>>> origin/master
 =======
 			} }
 >>>>>>> origin/master

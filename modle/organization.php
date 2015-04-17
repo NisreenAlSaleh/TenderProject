@@ -25,11 +25,16 @@ if($sql3){
 }
 
      }
+<<<<<<< HEAD
  function retrive($username=''){
+=======
+ function view($parm){
+>>>>>>> origin/master
 
    $connect2=  new createConnection ();
   $connect2->connectToDatabase();
 
+<<<<<<< HEAD
      $sql = "SELECT * FROM org_table WHERE org_name='$username'";
 $result = mysqli_query($connect2->conn,$sql);
 
@@ -44,6 +49,43 @@ if ( $result->num_rows >0)
 else {
     echo "0 results";
      }
+=======
+     $sql = "SELECT * FROM org_table WHERE org_id='$parm'";
+$query = mysqli_query($connect2->conn,$sql);
+  $mydata=  mysqli_fetch_array($query);
+
+  echo"<table>";
+      echo"<tr>";
+      echo"<th>"."<lable>"."org. ID"."</lable>"."</th>";
+          echo"<td>".$mydata['org_id']."</td>";
+           echo"</tr>";
+          echo"<tr>";
+            echo"<th>"."<lable>"."org. name"."</lable>"."</th>";
+          echo"<td>".$mydata['org_name']."</td>";
+          echo"</tr>";
+          echo"<tr>";
+          echo"<th>"."<lable>"." phone"."</lable>"."</th>";
+          echo"<td>".$mydata['phone']."</td>";
+          echo"</tr>";
+          echo"<tr>";
+           echo"<th>"."<lable>"."email"."</lable>"."</th>";
+          echo"<td>".$mydata['email']."</td>";
+          echo"</tr>";
+          echo"<tr>";
+           echo"<th>"."<lable>"."Address"."</lable>"."</th>";
+          echo"<td>". $mydata['address']."</td>";
+          echo"</tr>";
+          echo"<tr>";
+           echo"<th>"."<lable>"."org. discription"."</lable>"."</th>";
+          echo"<td>".$mydata['org_disc']."</td>";
+          echo"</tr>";
+          echo"<tr>";
+            echo"<th>"."<lable>"."org. supporting category"."</lable>"."</th>";
+          echo"<td>".$mydata['org_supp_cat']."</td>";
+           
+          echo"</tr>";          
+ echo"</table>"; 
+>>>>>>> origin/master
      $connect2->closeConnection();
  }
  
@@ -68,6 +110,7 @@ $q= "SELECT org_name,email FROM org_table WHERE org_name='$username' AND email='
       organization:: insert();
     }
  }
+<<<<<<< HEAD
  function delete($org_name){
    $connect2=  new createConnection ();
   $connect2->connectToDatabase();
@@ -80,6 +123,21 @@ $q= "SELECT org_name,email FROM org_table WHERE org_name='$username' AND email='
   $delete=mysqli_query($connect2->conn,$sql);
   if($delete){
       echo $org_name.'is DELETED';
+=======
+ function delete($parm){
+   $connect2=  new createConnection ();
+  $connect2->connectToDatabase();
+ $sql1="SELECT org_id FROM org_table WHERE org_id='$parm'";
+   $select=mysqli_query($connect2->conn,$sql1);
+  $result=  mysqli_fetch_array($select);
+ 
+  if($result[0]){
+      
+  $sql="DELETE FROM org_table WHERE org_id='$parm'";
+  $delete=mysqli_query($connect2->conn,$sql);
+  if($delete){
+      return true;
+>>>>>>> origin/master
   }
   }
   else{
@@ -92,11 +150,16 @@ $q= "SELECT org_name,email FROM org_table WHERE org_name='$username' AND email='
  
  
  
+<<<<<<< HEAD
    function update($orgname){
+=======
+   function update($parm){
+>>>>>>> origin/master
     $connect2=  new createConnection ();
   $connect2->connectToDatabase();
    
   $sql="SELECT org_id,org_name,phone,email,address,org_disc,org_supp_cat 
+<<<<<<< HEAD
   FROM org_table WHERE org_name='$orgname'";
 
   $select=  mysqli_query($connect2->conn, $sql);
@@ -109,6 +172,18 @@ $user_id=$res['org_id'];
    
      ?>
       <form action="<?php echo '';?>"method="POST">
+=======
+  FROM org_table WHERE org_id='$parm'";
+  
+
+  $select=  mysqli_query($connect2->conn, $sql);
+
+
+  if($select){
+   
+     ?>
+      <form action="<?php echo '';?>"method="post">
+>>>>>>> origin/master
         <?php  
       while($row=  mysqli_fetch_array($select)){
           
@@ -120,6 +195,7 @@ $user_id=$res['org_id'];
          $org_id=$row['org_id'];
          $org_supp_cat=$row['org_supp_cat'];
 
+<<<<<<< HEAD
      
           echo"<tr>";
             echo"<lable>"."organization name"."</lable>";
@@ -135,16 +211,48 @@ $user_id=$res['org_id'];
              echo"<lable>"."org dupporting category"."</lable>";
           echo"<input type='text' name='org_supp_cat' value=' $org_supp_cat'>";
            echo"<input type='hidden' name='user_id' value=' $org_id'>";
+=======
+     echo"<table>";
+          echo"<tr>";
+            echo"<th>"."<lable>"."organization name"."</lable>"."</th>";
+          echo"<td>"."<input type='text' name='org_name' value=' $org_name'>"."</td>";
+           echo"</tr>";
+          echo"<tr>";
+          echo"<th>"."<lable>"."org phone"."</lable>"."</th>";
+          echo"<td>"."<input type='text' name='phone' value=' $org_phone'>"."</td>";
+           echo"</tr>";
+          echo"<tr>";
+           echo"<th>"."<lable>"." email"."</lable>"."</th>";
+          echo"<td>"."<input type='text' name='email' value=' $org_email'>"."</td>";
+           echo"</tr>";
+          echo"<tr>";
+           echo"<th>"."<lable>"."address"."</lable>"."</th>";
+          echo"<td>"."<input type='text' name='address'value=' $address'>"."</td>";
+           echo"</tr>";
+          echo"<tr>";
+           echo"<th>"."<lable>"."org discription"."</lable>"."</th>";
+          echo"<td>"."<input type='text' name='org_disc' value=' $org_disc'>"."</td>";
+           echo"</tr>";
+          echo"<tr>";
+             echo"<th>"."<lable>"."org dupporting category"."</lable>"."</th>"."</td>";
+          echo"<td>"."<input type='text' name='org_supp_cat' value=' $org_supp_cat'>"."</td>";
+        echo"</tr>";   
+>>>>>>> origin/master
         
           
          
  echo"<td>" ."</td><td><input type='submit'  value='update'>". "</td>";
+<<<<<<< HEAD
+=======
+ echo"</table>";
+>>>>>>> origin/master
           echo"</form>";      
     
      
       }
   }
           
+<<<<<<< HEAD
         if (isset($_POST['update'])){
             $org_name=$row['org_name'];
         $org_phone=$row['phone'];
@@ -167,6 +275,29 @@ $user_id=$res['org_id'];
       $update=mysqli_query($connect2->conn,$sql);
       if($update){
           echo'table is updated';
+=======
+        if (isset($_POST['org_name'])){
+            
+            $org_name=$_POST['org_name'];
+        $org_phone=$_POST['phone'];
+        $org_email=$_POST['email'];
+        $address=$_POST['address'];
+        $org_disc=$_POST['org_disc'];
+         
+         $org_supp_cat=$_POST['org_supp_cat'];
+
+          
+           
+     $sql="UPDATE org_table SET org_name='$org_name',phone='$org_phone',email='$org_email',
+      address='$address',org_disc='$org_disc',org_supp_cat='$org_supp_cat' WHERE org_id='$parm'"; 
+  
+
+         $update=mysqli_query($connect2->conn,$sql);
+
+      $update=mysqli_query($connect2->conn,$sql);
+      if($update){
+    return true;
+>>>>>>> origin/master
       }
       else{
           echo'not updated';

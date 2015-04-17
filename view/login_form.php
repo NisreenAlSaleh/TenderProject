@@ -1,10 +1,13 @@
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <?php
     
 
     
     ?>
+=======
+>>>>>>> origin/master
 =======
 >>>>>>> origin/master
     <form action="<?php echo'';?>"method="post">
@@ -19,7 +22,11 @@
 </form>
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         </html
+=======
+        
+>>>>>>> origin/master
 =======
         
 >>>>>>> origin/master

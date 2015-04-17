@@ -165,6 +165,7 @@ $this->displayFields[$field] = $field;
 $this->displaySource = $this->dataSource;
 }
 }
+<<<<<<< HEAD
 
 public function render1() {
 echo $this->build1();
@@ -186,6 +187,23 @@ return $tmp;
 }
 
 }
+=======
+public function render1() {
+echo $this->build1();
+}
+public function build1() {
+$this->buildDisplayFields();
+$tmp = '<table border=1 class="CSS_Table_Example " width=50%>';
+
+$tmp .= $this->createTableHeaders();
+
+
+return $tmp;
+
+
+}
+
+>>>>>>> origin/master
 public function render2() {
 echo $this->build2();
 }
@@ -193,7 +211,11 @@ echo $this->build2();
 public function build2() {
 $this->buildDisplayFields();
 $tmp = '';
+<<<<<<< HEAD
 $tmp .= $this->createTableHeaders();
+=======
+
+>>>>>>> origin/master
 foreach($this->displaySource as $i => $row) {
 $class = 'odd';
 if($i%2 == 0) {
@@ -208,7 +230,11 @@ return $tmp;
 private function createTableHeaders() {
 $tmp = '<tr>';
 foreach($this->displayFields as $safe=>$actual) {
+<<<<<<< HEAD
 $tmp .= '<th>'.$actual.'</th>';
+=======
+$tmp .= '<td width=10% >'.$actual.'</td>';
+>>>>>>> origin/master
 }
 $tmp .= '</tr>';
 return $tmp;

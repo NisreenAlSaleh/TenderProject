@@ -1,5 +1,6 @@
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div id=list >
 <div class="headmenu"> <h2> Form</h2></div>
 	<div class="bodymenulink">
@@ -18,6 +19,8 @@ echo generateMenu($menu1);
 
 function generateMenu($items) {
 =======
+=======
+>>>>>>> origin/master
 
 <?php
 $menu2 = array(
@@ -32,6 +35,9 @@ $menu2 = array(
 echo generateMenu2($menu2);
 
 function generateMenu2($items) {
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
   $html = "<nav>";
   foreach($items as $item) {
@@ -42,10 +48,14 @@ function generateMenu2($items) {
 }
 ?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	</center>
 
 	</div>	
 	</div>
+=======
+	
+>>>>>>> origin/master
 =======
 	
 >>>>>>> origin/master
