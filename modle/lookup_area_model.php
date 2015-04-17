@@ -9,7 +9,7 @@ include_once'modle\DBconnection.php';
        
    }
  
-    function insert($name){
+   static function insert($name){
        
 	$connect=  new createConnection ();
        $connect->connectToDatabase();
@@ -33,7 +33,7 @@ include_once'modle\DBconnection.php';
                          echo 'this area already exists';
                      }
    }
-         function select(){
+        static function select(){
             
        $connect=  new createConnection ();
        $connect->connectToDatabase();
@@ -57,7 +57,7 @@ echo "0 results";
 
  
     
-     function update($value,$parm){
+    static function update($value,$parm){
         $connect=  new createConnection ();
        $connect->connectToDatabase();
       
@@ -74,7 +74,7 @@ echo "0 results";
           }
        
     }
-     function delete($name){
+    static function delete($name){
         echo$name;
         $connect=  new createConnection ();
        $connect->connectToDatabase();

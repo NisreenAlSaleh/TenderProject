@@ -76,7 +76,7 @@ echo "0 results";
        
     }
      function delete($name){
-        echo$name;
+     
         $connect=  new createConnection ();
        $connect->connectToDatabase();
       

@@ -13,15 +13,7 @@
     {
 
         $this->conn= mysqli_connect($this->host,$this->username,$this->password,$this->database );
-<<<<<<< HEAD
-<<<<<<< HEAD
-		
-=======
       
->>>>>>> origin/master
-=======
-      
->>>>>>> origin/master
 
         if(!$this->conn)// testing the connection
         {

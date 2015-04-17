@@ -32,14 +32,14 @@ include_once'modle\DBconnection.php';
                      else{
                          echo 'this category already exists';
                      }
-   }
+	             }
                      
         function select(){
             
        $connect=  new createConnection ();
        $connect->connectToDatabase();
        
-      $s2= "SELECT name FROM category";
+      $s2= "SELECT * FROM `category`ORDER BY `category`.`name` ASC";
      
     
 $sql=  mysqli_query($connect->conn, $s2);
@@ -75,7 +75,7 @@ echo "0 results";
           }
        
     }
-     function delete($name){
+    function delete($name){
         echo$name;
         $connect=  new createConnection ();
        $connect->connectToDatabase();

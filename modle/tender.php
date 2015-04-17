@@ -38,42 +38,13 @@ else{
 }
 
      }
-<<<<<<< HEAD
-<<<<<<< HEAD
- function retrive($username=''){
-=======
  function view($parm){
->>>>>>> origin/master
-=======
- function view($parm){
->>>>>>> origin/master
 
    $connect2=  new createConnection ();
   $connect2->connectToDatabase();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-     $sql = "SELECT * FROM tender WHERE tender_name='$username'";
-$result = mysqli_query($connect2->conn,$sql);
-
-
-if ( $result->num_rows > 0)
-    {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["tender_id"]."</br>"."Name: " . $row["tender_name"]."</br>";
-           }
-    }
-else {
-    echo "0 results";
-     }
-=======
-     $sql = "SELECT * FROM tender WHERE tender_id='$parm'";
-      $query = mysqli_query($connect->conn,$sql);
-=======
      $sql = "SELECT * FROM tender WHERE tender_id='$parm'";
       $query = mysqli_query($connect2->conn,$sql);
->>>>>>> origin/master
      $mydata=  mysqli_fetch_array($query);
      echo"<table>";
       echo"<tr>";
@@ -114,10 +85,6 @@ else {
            
           echo"</tr>";          
  echo"</table>"; 
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
      $connect2->closeConnection();
  }
  
@@ -144,44 +111,18 @@ $q= "SELECT tender_name,org_trade_mark FROM tender WHERE tender_name='$tender_na
       tender:: insert();
     }
  }
-<<<<<<< HEAD
-<<<<<<< HEAD
-  function delete($tendername){
-   $connect2=  new createConnection ();
-  $connect2->connectToDatabase();
- $sql1="SELECT tender_name FROM tender WHERE tender_name='$tendername'";
-=======
-=======
->>>>>>> origin/master
   function delete($parm){
    $connect2=  new createConnection ();
   $connect2->connectToDatabase();
  $sql1="SELECT tender_id FROM tender WHERE tender_id='$parm'";
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
    $select=mysqli_query($connect2->conn,$sql1);
   $result=  mysqli_fetch_array($select);
   if($result[0]){
       
-<<<<<<< HEAD
-<<<<<<< HEAD
-  $sql="DELETE FROM utender WHERE tender_name='$tendername'";
-  $delete=mysqli_query($connect2->conn,$sql);
-  if($delete){
-      echo $tendername.'is DELETED';
-=======
-=======
->>>>>>> origin/master
   $sql="DELETE FROM tender WHERE tender_id='$parm'";
   $delete=mysqli_query($connect2->conn,$sql);
   if($delete){
       return true;
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
   }
   }
   else{
@@ -191,33 +132,11 @@ $q= "SELECT tender_name,org_trade_mark FROM tender WHERE tender_name='$tender_na
   }
  
   
-<<<<<<< HEAD
-<<<<<<< HEAD
-  function update($tender_name){
-=======
   function update($parm){
->>>>>>> origin/master
-=======
-  function update($parm){
->>>>>>> origin/master
       $connect2=  new createConnection ();
   $connect2->connectToDatabase();
    
   $sql="SELECT tender_id,tender_name,start_date,end_date,invelope_hand_over,invelope_opining,tender_content,tender_region 
-<<<<<<< HEAD
-  FROM tender WHERE tender_name='$tender_name'";
-
-  $select=  mysqli_query($connect2->conn, $sql);
-
-$res=mysqli_fetch_array($select);
-
-$tender_id=$res['tender_id'];
-           echo$tender_id;
-  if($select){
-   
-     ?>
-      <form action="<?php echo '';?>"method="POST">
-=======
   FROM tender WHERE tender_id='$parm'";
 
   $select=  mysqli_query($connect2->conn, $sql);
@@ -229,7 +148,6 @@ $tender_id=$res['tender_id'];
    
      ?>
       <form action="<?php echo '';?>"method="post">
->>>>>>> origin/master
         <?php  
       while($row=  mysqli_fetch_array($select)){
           
@@ -240,32 +158,6 @@ $tender_id=$res['tender_id'];
         $invelope_opining=$row['invelope_opining'];
         $tender_content=$row['tender_content'];
         $tender_region=$row['tender_region'];
-<<<<<<< HEAD
-     $tender_id=$row['tender_id'];
-
-     
-          echo"<tr>";
-            echo"<lable>"."tender name"."</lable>";
-          echo"<input type='text' name='tendername' value=' $tender_name'>";
-          echo"<lable>"."start date"."</lable>";
-          echo"<input type='text' name='startdate' value=' $start_date'>";
-           echo"<lable>"."end date"."</lable>";
-          echo"<input type='text' name='enddate' value=' $end_date'>";
-           echo"<lable>"."invelope hand over"."</lable>";
-          echo"<input type='text' name='inv_hand'value=' $invelope_hand_over'>";
-           echo"<lable>"."invelope opining"."</lable>";
-          echo"<input type='text' name='inv_opining' value=' $invelope_opining'>";
-           echo"<lable>"."tender content"."</lable>";
-               echo"<input type='text' name='content' value=' $tender_content'>";
-                echo"<lable>"."tender region"."</lable>";
-                    echo"<input type='text' name='region' value=' $tender_region'>";
-           echo"<input type='hidden' name='user_id' value=' $tender_id'>";
-        
-          
-         
- echo"<td>" ."</td><td><input type='submit'  value='update'>". "</td>";
-          echo"</form>";      
-=======
         
         
       echo"<table>";
@@ -300,19 +192,14 @@ $tender_id=$res['tender_id'];
          echo"<td>" ."</td><td><input type='submit'  value='update'>". "</td>";
          echo"</table>";
          echo"</form>";      
->>>>>>> origin/master
     
      
       }
   }
           
-<<<<<<< HEAD
-        if (isset($_POST['update'])){
-=======
         if (isset($_POST['tendername'])){
                      if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
->>>>>>> origin/master
         $tender_name=$row['tendername'];
         $start_date=$row['startdate'];
         $end_date=$row['enddate'];
@@ -320,17 +207,6 @@ $tender_id=$res['tender_id'];
         $invelope_opining=$row['inv_opining'];
         $tender_content=$row['content'];
         $tender_region=$row['region'];
-<<<<<<< HEAD
-     $tender_id=$row['tender_id'];
-
-  
-
-           echo 'mmmmmmmm';
-           
-     $sql="UPDATE user_profile SET tender_name='$tender_name',start_date='$start_date',end_date='$end_date',
-      invelope_hand_over='$invelope_hand_overe',invelope_opining='$invelope_opining',tender_content='$tender_content'
-           ,tender_region='$tender_region 'WHERE tender_id='$tender_id'"; 
-=======
      
 
   
@@ -339,32 +215,20 @@ $tender_id=$res['tender_id'];
      $sql="UPDATE tender SET tender_name='$tender_name',start_date='$start_date',end_date='$end_date',
       invelope_hand_over='$invelope_hand_over',invelope_opining='$invelope_opining',tender_content='$tender_content'
            ,tender_region='$tender_region 'WHERE tender_id='$parm'"; 
->>>>>>> origin/master
   
   
    echo $sql;
       $update=mysqli_query($connect2->conn,$sql);
       if($update){
-<<<<<<< HEAD
-          echo'table is updated';
-      }
-      else{
-          echo'not updated';
-=======
           return true;
       }
       else{
           echo'failed to update the table';
->>>>>>> origin/master
       }
         }
         
   
-<<<<<<< HEAD
-  
-=======
         }
->>>>>>> origin/master
   }
  
   function validate(){
@@ -435,11 +299,11 @@ if (!preg_match("/^[a-zA-Z ]*$/",$orgtradem)) {
      $envelopeopen= ($_POST['invelope_opining']);
      
 }
-	     if (empty($_POST["tender_region"])) {
-     $etenderregion = " tenderregion is required";$var=false;
+	     if (ISSET ($_POST["tender_region"])) {
+     ECHO" tenderregion is required";$var=false;
 
    } else {
-     $tenderregion= ($_POST["tender_region"]);
+     $tenderregion= $_POST["tender_region"];
      
 if (!preg_match("/^[a-zA-Z ]*$/",$tenderregion)) {
        $etenderregion= "Only letters and white space allowed"; 
@@ -457,9 +321,9 @@ if (!preg_match("/^[a-zA-Z ]*$/",$tenderregion)) {
 
 	
 }
-if($var==true){
+
 return $var;
-}
+
   }
 function valid_pass($candidate) {
     $matches=" ";

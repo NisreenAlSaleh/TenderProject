@@ -1,13 +1,5 @@
 <?php
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 /*
->>>>>>> origin/master
-=======
-/*
->>>>>>> origin/master
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -63,13 +55,5 @@ $connect->closeConnection(); // Closing Connection
 
 
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 */
->>>>>>> origin/master
-=======
-*/
->>>>>>> origin/master
 ?>

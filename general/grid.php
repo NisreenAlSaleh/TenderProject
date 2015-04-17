@@ -165,29 +165,6 @@ $this->displayFields[$field] = $field;
 $this->displaySource = $this->dataSource;
 }
 }
-<<<<<<< HEAD
-
-public function render1() {
-echo $this->build1();
-}
-
-public function build1() {
-$this->buildDisplayFields();
-$tmp = '<table collapse=0 border=1>';
-
-$tmp .= $this->createTableHeaders();
-foreach($this->displaySource as $i => $row) {
-
-$class = 'odd';
-if($i%2 == 0) {
-$class = 'even';
-}
-
-return $tmp;
-}
-
-}
-=======
 public function render1() {
 echo $this->build1();
 }
@@ -203,7 +180,6 @@ return $tmp;
 
 }
 
->>>>>>> origin/master
 public function render2() {
 echo $this->build2();
 }
@@ -211,11 +187,7 @@ echo $this->build2();
 public function build2() {
 $this->buildDisplayFields();
 $tmp = '';
-<<<<<<< HEAD
-$tmp .= $this->createTableHeaders();
-=======
 
->>>>>>> origin/master
 foreach($this->displaySource as $i => $row) {
 $class = 'odd';
 if($i%2 == 0) {
@@ -230,11 +202,7 @@ return $tmp;
 private function createTableHeaders() {
 $tmp = '<tr>';
 foreach($this->displayFields as $safe=>$actual) {
-<<<<<<< HEAD
-$tmp .= '<th>'.$actual.'</th>';
-=======
 $tmp .= '<td width=10% >'.$actual.'</td>';
->>>>>>> origin/master
 }
 $tmp .= '</tr>';
 return $tmp;

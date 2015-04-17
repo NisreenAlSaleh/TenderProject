@@ -1,15 +1,4 @@
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <?php
-    
-
-    
-    ?>
-=======
->>>>>>> origin/master
-=======
->>>>>>> origin/master
     <form action="<?php echo'';?>"method="post">
 <table>
     
@@ -21,12 +10,4 @@
 </table>
 </form>
         
-<<<<<<< HEAD
-<<<<<<< HEAD
-        </html
-=======
         
->>>>>>> origin/master
-=======
-        
->>>>>>> origin/master

@@ -2,14 +2,6 @@
 class user_grid_view {
 
     function __construct() {
-<<<<<<< HEAD
-       include('D:wamp/www/tender_project/general/grid.php');
-include_once'D:\wamp\www\tender_project\modle\user.php'; 
-include_once'D:\wamp\www\tender_project\modle\DBconnection.php'; 
-    }
-
-function generate_grid(){
-=======
        include('/general/grid.php');
 include_once'/modle/user.php'; 
 include_once'/modle/DBconnection.php'; 
@@ -17,7 +9,6 @@ include_once'/modle/DBconnection.php';
 
 function generate_grid(){
     echo $view="<a href='./index.php?url=user_controler/create/' value=\"create\" \">create</a>";
->>>>>>> origin/master
 
   $connect=  new createConnection ();
   $connect->connectToDatabase();
@@ -45,10 +36,6 @@ $dd->source($mydata);
 $dd->fields(array(
 ' user_id'=>' user id'."<span>",
  'user_name' => 'user name ',
-<<<<<<< HEAD
- 'email ' => ' email',
-=======
->>>>>>> origin/master
  'f_nmae'=>'first name',
     'delete'=>'delete',
     'update'=>'update',
@@ -84,10 +71,6 @@ $dg->source($data);
 $dg->fields(array(
 'uid'=>' ',
  'username' => '  ',
-<<<<<<< HEAD
- 'email' => ' ',
-=======
->>>>>>> origin/master
 'f_name'=>'',
     'delete'=>'',
     'update'=>'',
@@ -96,10 +79,7 @@ $dg->fields(array(
 
  $dg->render2();
 
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
 }
 }
 }

@@ -1,21 +1,9 @@
 <?php
 class Genral{
    
-<<<<<<< HEAD
-<<<<<<< HEAD
-function generateMenu($items,$class) {
-  $html = "<div id=$class>";
-  $html .= "<nav>";
-=======
 function generateMenu($items) {
   
   $html = "<nav>";
->>>>>>> origin/master
-=======
-function generateMenu($items) {
-  
-  $html = "<nav>";
->>>>>>> origin/master
   foreach($items as $item) {
     $html .= "<li><a href='{$item['url']}'>{$item['text']}</a></li>";
   }

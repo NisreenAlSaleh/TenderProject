@@ -2,16 +2,7 @@
  
 class login{
  public   function __construct(){
-<<<<<<< HEAD
-<<<<<<< HEAD
         include 'D:\wamp\www\tender_project\modle\DBconnection.php';
-=======
-      
-        include'modle/DBconnection.php';
->>>>>>> origin/master
-=======
-        include 'D:\wamp\www\tender_project\modle\DBconnection.php';
->>>>>>> origin/master
     }
     /*
     function valide(){
@@ -39,18 +30,6 @@ class login{
     
     function validate(){
         $var=true;
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-if (empty($_POST['username']) || empty($_POST['password'])) 
-{
-
-echo "Username or Password is invalid";
-$var=false;
-=======
-=======
->>>>>>> origin/master
       if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
       if (empty($_POST['user_name'])) 
@@ -58,31 +37,11 @@ $var=false;
 
       echo "Username or Password is empty";
       $var=false;
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
 
 }
 
 else{
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-$user_name=$_POST['username'];
-
-$password=$_POST['password'];
- 
-}
-        }
-        return $var;
-    }
-    
-    
-function ceck_db($user_name,$password){
-=======
-=======
->>>>>>> origin/master
 $user_name=$_POST['user_name'];
 
 $password=$_POST['password'];
@@ -94,10 +53,6 @@ $password=$_POST['password'];
     
     
 function check_db($user_name,$password){
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
    $connect=  new createConnection ();
   $connect->connectToDatabase();
 
@@ -110,27 +65,10 @@ if ($result->num_rows ==1) {
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-include'D:\wamp\www\tender_project\modle\session.php';
-$var = new session();
-
-$var->start($_POST['username'],$_POST['password']);
- 
-// Initializing Session
-echo$user_name;
-header(URL);
-=======
-=======
->>>>>>> origin/master
  
 // Initializing Session
 
 header("location: index.php");
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
  // Redirecting To Other Page
 
 } 
