@@ -1,345 +1,4 @@
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-body {
-margin: 0;
-padding: 0;
-background: #F0F5F5;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 12px;
-font-weight: 200;
-color: 	#253F3F;
-}
-
-/*div contan header,right,left,contant,footer*/
-#all{
-width: 1200px;
-height:1379px;
-margin: 10px auto 10px;
-padding: 0px 0px 0px 0px;
-background: #C2D6D6;
-box-shadow: 0px 0px 5px 5px rgba(0,0,0,.2);	
-}
-
-/*right side*/
-.rightblock{
-float:right;
-margin-left:5px;
-width:250px;
-height:1070px;
-}
-.bodylink{
-background:#006666 ;
-}
-
-.bodymenulink{
-    margin-left: 21px;
-        float:right;
-margin-left: 5px;
-padding-right: 110px;
-
-}
-#list{
-position:relative;
-bottom:525px;
-left:30px;
-
-}
-.headmenu{
-width:210px;
-height:30px;
-background:#538D8D;
-color:#DEEBEB;
-font-weight:bold;
-text-align:center;
-padding:5px;
-margin:10px 5px 0px 5px;
-}
-
-a{
-color:	#2E4E4E;
-text-decoration:none;
-}
-
-.bodymenulink{
-width:200px;
-height:125px;
-background: #AECECE ;
-padding:10px;
-margin:3px 5px 0px 5px;
-}
-
-.bodymenulink ul{
-list-style:none;
-padding:2px;
-margin:5px;
-}
-.bodymenulink ul li{
-}
-
-.bodymenulink ul li a{
-display: #000000  ;
-padding:1px 5px 5px 5px;
-border-bottom:5px  #282828;
-}
-
-.bodymenulink ul li a:hover{
-background:#DEEBEB ;
-color:#406E6E;
-border-bottom:0px solid #7DB1B1
-;
-}
-/*left side*/
-.leftblock{
-margin-right:5px;
-float:left;
-width:250px;
-height: 677px;
-background: #AECECE;
-}
-/*contasnt*/
-.centerblock{
-width:auto;
-margin-left:276px;
-margin-right:350px;
-height: 1070px;
-padding-left: 0px;
-}
-#rout{
-    float:inside;
-margin-left: 5px;
-
-}
-
-/** header*/
-#header{
-width:1200px ;
-height:528px;
-background: #99C2C2;    
-}
-
-/** logo */
-#logo{
-margin: 20px;
-padding: 30px;
-    
-}
-
-
-/** top_menu */
-#menu {
-overflow: hidden;
-width: 1200px;
-background: #5C9D9D;
-font-size: 20px;
-color: #2E4E4E;
-}
-
-#menu ul {
-margin: 0px 0px 0px 0px;
-padding: 0px 0px;
-list-style: none;
-line-height: normal;
-text-align: center;
-position:absolute;
-}
-
-#menu li {
-display: inline-block;
-}
-
-#menu a {
-display: block;
-padding: 15px 40px 15px 40px;
-text-decoration: none;
-text-transform: uppercase;
-text-align: center;
-font-family: 'Oswald', sans-serif;
-font-size: 16px;
-font-weight: 200;
-color: #DEEBEB;
-border: none;
-}
-
-#menu a:hover, #menu .current_page_item a {
-text-decoration: none;
-background:	#375E5E;
-box-shadow: inset 0px 0px 50px 5px rgba(0,0,0,.1);
-border-radius: 5px;
-color: #DEEBEB;
-}
-
-#menu .current_page_item a {
-background: #fcfadd;
-color: #88181c ;
-}
-
-#menu .last {
-border-right: none;
-}
-
-
-#ten{
-position:relative;
-bottom:500px;
-background:#E6F0F0;
-width:110px;
-}
-h1{
-width:100px;
-}
-
-
-#navbar{
-margin-top:-50px;
-margin-right:1200px;
-}
-
-#outter{
-float:left;
-margin-left:910px;
-margin-top: 330px;
-}
-outter{
-    float :left;
-width:100%;
-position:relative; 
-height:100%;
-}
-
-i:hover{
-font-size:42px;
-margin-bottom:40px;
-}
-nav{
-list-style-type:none;}
-a{text-decoration:none;}
-
-.scrol{
-margin-top:200px; 
-margin-right:48px;}
-
-.ip{
-border: 2px solid #a1a1a1;
-padding: 10px 40px;
-width: 135px; 
-border-radius: 10px; 
-box-shadow:0 0 5px #333;}
-
-#cont{ 
-margin-right:280px; 
-margin-top:17px;}
-ul  {
-list-style: none;
-margin-top:-2px;
- }
-ul li{
-display:inline;
-position:relative;
-padding:15px;           
-cursor:pointer;
-margin-right:0;			 
-color:#375E5E;
-}
-ul li:hover{                
-
-}
-ul li ul{
-padding:0;
-position:absolute;
-left:0;
-top:160px;
-width:250px;
-opacity:0;
-visibility:hidden;
-transition:1s;                
-}
-ul li ul li{
-display:block;
-background:#DEEBEB;
-color:#375E5E;
-}
-ul li ul li:hover{
-background:#538D8D;
-}
-ul li:hover ul{
-opacity:1;
-visibility:visible;
-top:50px;
-transition:1s;
-}
-a{
- text-decoration:none;
-}
-
-#list{
-position:relative;
-bottom:300px;
-left:30px;
-
-}
-.headmenu{
-width:210px;
-height:30px;
-background:#538D8D;
-color:#DEEBEB;
-font-weight:bold;
-text-align:center;
-padding:5px;
-margin:10px 5px 0px 5px;
-}
-
-a{
-color:	#2E4E4E;
-text-decoration:none;
-}
-
-#bodymenulink{
-width:200px;
-height:125px;
-background: #AECECE ;
-padding:10px;
-margin:3px 5px 0px 5px;
-}
-
-#bodymenulink ul{
-list-style:none;
-padding:2px;
-margin:5px;
-}
-.bodymenulink ul li{
-}
-
-.bodymenulink ul li a{
-display: #000000  ;
-padding:1px 5px 5px 5px;
-border-bottom:5px  #282828;
-}
-
-.bodymenulink ul li a:hover{
-background:#DEEBEB ;
-color:#406E6E;
-border-bottom:0px solid #7DB1B1
-;
-}
-
-
-
-#footer{
-width:1204px ;
-height:200px;
-background: #F0F4F4; 
-margin-top: 143px;
-}
-#copyright{
-overflow: hidden;
-padding: 5em 0em;
-border-top: 1px solid rgba(255,255,255,0.08);
-}
-
-=======
-=======
->>>>>>> origin/master
 
 body {
 	margin-top: 50px;
@@ -397,13 +56,8 @@ img.right {
 }
 
 #header {
-<<<<<<< HEAD
-	width: 1000px;
-	margin: 0 auto;
-=======
 	width: 1164px;
 	margin: 12px auto;
->>>>>>> origin/master
 	height: 150px;
     background:#800000 no-repeat left top;
 }
@@ -411,11 +65,7 @@ img.right {
 /* Header */
 
 #logo {
-<<<<<<< HEAD
-	width: 800px;
-=======
 	width: 995px;
->>>>>>> origin/master
 	height: 100px;
 	margin: 0 auto;
 	padding: 0 10px 0 70px;
@@ -468,11 +118,7 @@ img.right {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-<<<<<<< HEAD
-	margin-left:215px;
-=======
 	margin-left:150px;
->>>>>>> origin/master
 }
 
 #menu li {
@@ -514,14 +160,8 @@ img.right {
 /* Page */
 
 #page {
-<<<<<<< HEAD
-	width: 990px;
-	margin: 0 auto;
-	padding: 28px 88px;
-=======
 	width: 1170px;
 	margin: 0 auto;
->>>>>>> origin/master
 	background: #FFFFFF;
 }
 
@@ -538,12 +178,6 @@ img.right {
 /* Content */
 
 #content {
-<<<<<<< HEAD
-	float: left;
-	width: 550px;
-	height:1200px;
-}
-=======
     float: left!important;
     margin-left: 10px !important;
     margin-right: 10px !important;
@@ -551,7 +185,6 @@ img.right {
     height: 1200px !important;
 }
 
->>>>>>> origin/master
 .flower {
 	padding-left: 20px;
 }
@@ -563,11 +196,7 @@ img.right {
 }
 
 #right_menu{
-<<<<<<< HEAD
-	float: right;
-=======
 	float: right!important;
->>>>>>> origin/master
 }
 
 .sidebar {
@@ -691,10 +320,6 @@ img.right {
 
 /* Footer */
 
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
 #copyright p
 {
 letter-spacing: 0.20em;
@@ -702,14 +327,7 @@ text-align: center;
 text-transform: uppercase;
 font-size: 0.80em;
 color: 	#2E4E4E;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 margin-left:180px;
->>>>>>> origin/master
-=======
-margin-left:180px;
->>>>>>> origin/master
 }
 
 #copyright a
@@ -717,56 +335,18 @@ margin-left:180px;
 text-decoration: none;
 color: #2E4E4E;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-.content{
-    padding-top: 0px;
-    
-}
-.container {
-width: 900px;
-margin: 0px auto;
-=======
 
 .container {
 width: 1200px;
->>>>>>> origin/master
-=======
-
-.container {
-width: 1200px;
->>>>>>> origin/master
 }
 
 .icons {
 text-align:center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 margin-left:180px;
->>>>>>> origin/master
-=======
-margin-left:180px;
->>>>>>> origin/master
 }
 .icons li {
 list-style:none;
 display:inline;
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-
-
-=======
-
-}
->>>>>>> origin/master
-/*error page*/
-body{
-font-family: 'Courgette', cursive;
-}
-	
-=======
 
 }
 /*error page*/
@@ -775,7 +355,6 @@ body{
 font-family: 'Courgette', cursive;
 }
 */	
->>>>>>> origin/master
 .wrap{
 margin:0 auto;
 width:1000px;
@@ -785,29 +364,13 @@ margin-top:50px;
 }	
 .logoo h1{
 font-size:xx-large;
-<<<<<<< HEAD
-<<<<<<< HEAD
-color:#006666;
-=======
 color:#800000;
->>>>>>> origin/master
-=======
-color:#800000;
->>>>>>> origin/master
 text-align:center;
 margin-bottom:1px;
 text-shadow:1px 1px 6px #fff;
 }	
 .logoo p{
-<<<<<<< HEAD
-<<<<<<< HEAD
-color:#006666;
-=======
 color:#A64D4D;
->>>>>>> origin/master
-=======
-color:#A64D4D;
->>>>>>> origin/master
 font-size:20px;
 margin-top:1px;
 text-align:center;
@@ -817,15 +380,7 @@ color:lightgreen;
 }	
 .sub a{
 color:white;
-<<<<<<< HEAD
-<<<<<<< HEAD
-background:#006666;
-=======
 background:#800000;
->>>>>>> origin/master
-=======
-background:#800000;
->>>>>>> origin/master
 text-decoration:none;
 padding:7px 120px;
 font-size:13px;
@@ -835,11 +390,6 @@ font-weight:bold;
 -moz-border-radius:.1em;
 -border-radius:.1em;
 }	
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/master
 
 .form-style-3{
     max-width: 450px;
@@ -931,9 +481,6 @@ font-weight:bold;
     color:red;
     font-weight:normal;
 }
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
 .CSS_Table_Example {
 	margin:0px;padding:0px;
 	width:100%;
@@ -1027,4 +574,3 @@ font-weight:bold;
 }.CSS_Table_Example tr:last-child td:last-child{
 	border-width:0px 0px 0px 0px;
 }
->>>>>>> origin/master
