@@ -23,8 +23,8 @@ $name=$_POST['name'] ;
 
 if($var!=1){
 include "modle/lookup_area_model.php";
-new lookup_area_model();
-lookup_area_model::insert($name);
+$lookup_area_model=new lookup_area_model();
+$lookup_area_model->insert($name);
 }
 lookup_area_con::grid_view();
 }
@@ -33,8 +33,8 @@ lookup_area_con::grid_view();
 static function view(){
 include "/modle/lookup_area_model.php";
 include "view/lookup/lookup_area/lookup_area_view.php";
-new lookup_area_model();
-lookup_area_model::select();
+$lookup_area_model=new lookup_area_model();
+$lookup_area_model->select();
 
 }
 
@@ -48,8 +48,8 @@ if(isset($_POST['submit']))
 
 $value=$_POST['sel'];
 
-new lookup_area_model();
-lookup_area_model::update($value,$parm);
+$lookup_area_model=new lookup_area_model();
+$lookup_area_model->update($value,$parm);
 }
 lookup_area_con::grid_view();
 }
@@ -58,8 +58,8 @@ lookup_area_con::grid_view();
 function delete($parm){
 $name=$parm;
 include "modle/lookup_area_model.php";
-new lookup_area_model();
-lookup_area_model::delete($name);
+$lookup_area_model=new lookup_area_model();
+$lookup_area_model->delete($name);
 lookup_area_con::grid_view();
 
 }
@@ -70,8 +70,8 @@ $lookup1_grid_view->generate_grid();
 }      
 
 function view2($parm){
-new lookup_area_model();
-lookup_area_model::view($parm);
+$lookup_area_model=new lookup_area_model();
+$lookup_area_model->view($parm);
 }
 }
 ?>

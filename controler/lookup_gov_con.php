@@ -23,8 +23,8 @@ $name=$_POST['name'] ;
 
 if($var!=1){
 include "modle/lookup_gov_model.php";
-new lookup_gov_model();
-lookup_gov_model::insert($name);
+$lookup_gov_model=new lookup_gov_model();
+$lookup_gov_model->insert($name);
 }
 lookup_gov_con::grid_view();
 }
@@ -33,8 +33,8 @@ lookup_gov_con::grid_view();
 static function view(){
 include "/modle/lookup_gov_model.php";
 include "view/lookup/lookup_gov/lookup_gov_view.php";
-new lookup_gov_model();
-lookup_gov_model::select();
+$lookup_gov_model=new lookup_gov_model();
+$lookup_gov_model->select();
 
 }
 
@@ -48,8 +48,8 @@ if(isset($_POST['submit']))
 
 $value=$_POST['sel'];
 
-new lookup_gov_model();
-lookup_gov_model::update($value,$parm);
+$lookup_gov_model=new lookup_gov_model();
+$lookup_gov_model->update($value,$parm);
 }
 lookup_gov_con::grid_view();
 }
@@ -58,8 +58,8 @@ lookup_gov_con::grid_view();
 function delete($parm){
 $name=$parm;
 include "modle/lookup_gov_model.php";
-new lookup_gov_model();
-lookup_gov_model::delete($name);
+$lookup_gov_model=new lookup_gov_model();
+$lookup_gov_model->delete($name);
 lookup_gov_con::grid_view();
 
 }
