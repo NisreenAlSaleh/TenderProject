@@ -1,32 +1,13 @@
 
 <link href="theams/css/style.css" rel="stylesheet" type="text/css"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
-=======
->>>>>>> origin/master
 <?php define('URL', dirname(__FILE__) );
 
 define(  'PATH', $_SERVER['REQUEST_URI']);
 
 ?>
-<<<<<<< HEAD
-<<<<<<< HEAD
- <div id="all">
-     <div id="header">
-                  <?php
-=======
 <!-- start header -->
 <div id="header">
     <?php
->>>>>>> origin/master
-=======
-<!-- start header -->
-<div id="header">
-    <?php
->>>>>>> origin/master
 include'general/Rout.php';
 include '/general/errors.php';
 include '/general/genral.php';
@@ -35,68 +16,6 @@ include '/general/system_array.php';
 $genral = new Genral();
 $rout = new Routing();
 ?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <?php
-  include'theams/Views/header.php';
-echo $genral->GenerateMenu($menu11,"menu");
- 
-  ?>
-
- <img src="theams/img/ten1.jpg" width="1200" height="300" alt="" />
-     </div>
-
-    <div class="content">
-        <?php
-        include '/view/login_form.php';
-        ?>
-         </div>
-     
-         <div class="leftblock">
-             <div class="bodymenulink">
-            <?php
-           // 
-         echo $genral->GenerateMenu($menu1,".bodymenulink");
-         ?>
-       </div>
-        </div>
-         <div class="rightblock">
-         <?php
-         include'theams/Views/right_menu.php';
-         ?> 
-         </div>
-        
-        <div id="rout">
-         
-         <div class="centerblock">
-              <?php
-         $rout->router();
-         
-        ?>
-        
-        </div>
-
-        
-         
-          </div>
-	 
-
-       
-
-       
-    
- 
-
-    <div id="footer">
-      <?php
-       include'theams/Views/footer.php';
-      ?>
-    </div>
-     
-</div>
-=======
-=======
->>>>>>> origin/master
 <?php
  include'theams/Views/header.php';
  ?>
@@ -136,20 +55,12 @@ echo $genral->GenerateMenu($header_menu);
     
 <!-- start content -->
     <div id="content">
-<<<<<<< HEAD
-    <div class="flower"><img src="theams/img/ten1.jpg" alt="" width="510" height="250" /></div>
-	<?php
-    $rout->router();
-    ?>		
-    
-=======
   <!--  <div class="flower"><img src="theams/img/ten1.jpg" alt="" width="510" height="180" /></div>-->
 	
       <?php
     $rout->router();
     ?>		
    
->>>>>>> origin/master
     </div>
 <!-- end content -->
 
@@ -192,7 +103,3 @@ echo $genral->GenerateMenu($header_menu);
       ?>
 </div>
 
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
