@@ -49,6 +49,7 @@ while($row = $sql->fetch_assoc()) {
     
 echo "<option value='$row[name]'>  $row[name] </option>";
                  }
+                  echo '</select>';
 }
 else
 {
