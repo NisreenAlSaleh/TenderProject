@@ -1,12 +1,10 @@
 <?php
 class lookup1_grid_view {
-
     function __construct() {
        include('/general/grid.php');
 include_once'\modle\lookup_cat_model.php'; 
 include_once'\modle\DBconnection.php'; 
     }
-
 function generate_grid(){
  echo $view="<a href='./index.php?url=lookup_cat_con/add/' value=\"create\" \">create</a>";
   $connect=  new createConnection ();
@@ -17,14 +15,10 @@ function generate_grid(){
  'name'=>'',
 'delete'=>'',
 'update'=>'',
-
      
  ));
  
 $sql=mysqli_query($connect->conn,$s);
-
-
-
 ?>
 
 <?php
@@ -38,10 +32,7 @@ $dd->fields(array(
    
 ));
 $dd->render1();
-
  
-
-
 while($row=  mysqli_fetch_array($sql)){
  $delete="<a href='./index.php?url=lookup_cat_con/delete/".$row['cat_id']."' value=\"delete\" \">delete</a>";
   $update="<a href='./index.php?url=lookup_cat_con/update/".$row['cat_id']."' value=\"update\" \">update</a>";
@@ -49,17 +40,13 @@ while($row=  mysqli_fetch_array($sql)){
 $data = array(
  array(
  'cid' =>$row['cat_id'],
- 'name' => $row['name'],
-
+ 'name' => $row['cat_name'],
 'delete'=>$delete,
 'update'=>$update,
-
  ),
  ); 
  
  
-
-
  $dg = new OPCDataGrid();
 $dg->source($data);
 $dg->fields(array(
@@ -70,11 +57,8 @@ $dg->fields(array(
     'update'=>'',
     
  ));
-
  $dg->render2();
-
 }
 }
 }
-
 ?>

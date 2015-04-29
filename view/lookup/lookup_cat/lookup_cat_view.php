@@ -1,4 +1,3 @@
-<form>
-<select name="sel"> 
-<option value=""> -----------ALL----------- </option> 
-</form>
+<form  method="post">
+ <select name="sel2" > 
+ <option> -----------ALL----------- </option>  
