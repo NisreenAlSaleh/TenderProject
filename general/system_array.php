@@ -2,12 +2,13 @@
 
 $header_menu = array(
 
-  'home'  => array('text'=>'Home',  'url'=>'./index.php'),
+  'home'  => array('text'=>'Home',  'url'=>'./index.php?url=tender_controler/tender_view',),
 
-  'registration form' => array('text'=>'registration form', 'url'=>'./index.php?url=org_controler/create'),
-    'About Us' => array('text'=>'About Us', 'url'=>'?p=about'),
-    'Contact Us' => array('text'=>'Contact Us', 'url'=>'./index.php?url=contact_controler/create',),
-     'log in' => array('text'=>'log in', 'url'=>'./index.php?url=login_controler/log_in',),
+  'registration form' => array('text'=>'registration form', 'url'=>'./index.php?url=org_controler/create','name'=>'tender_controler'),
+    'About Us' => array('text'=>'About Us', 'url'=>'?p=about','value'=>''),
+    'Contact Us' => array('text'=>'Contact Us', 'url'=>'./index.php?url=contact_controler/create','name'=>'contact_controler'),
+     'log in' => array('text'=>'log in', 'url'=>'./index.php?url=login_controler/log_in','name'=>'login_controler'),
+    'log out' => array('text'=>'log out', 'url'=>'./index.php?url=logout_controler/logout','name'=>'logout_controler'),
 );
 $left_menu = array(
 
@@ -18,7 +19,7 @@ $left_menu = array(
     'Tender' => array('text'=>'Tender', 'url'=>'./index.php?url=tender_controler/grid_view'),
      'Organization' => array('text'=>'Organization', 'url'=>'./index.php?url=org_controler/grid_view'),
     'governerate' => array('text'=>'governerate', 'url'=>'./index.php?url=lookup_gov_con/grid_view'),
-  'category' => array('text'=>'category', 'url'=>'./index.php?url=lookup_cat_con/grid_view'),
+      'category' => array('text'=>'category', 'url'=>'./index.php?url=lookup_cat_con/grid_view'),
     'area' => array('text'=>'area', 'url'=>'./index.php?url=lookup_area_con/grid_view'),
 );
 
